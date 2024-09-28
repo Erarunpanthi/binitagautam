@@ -3,106 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engineering Notes & Preparation</title>
+    <title>CivPrepMaster</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Engineering Notes & Preparation</h1>
+        <div class="logo">CivPrepMaster</div>
         <nav>
             <ul>
-                <li><a href="#notes">Notes</a></li>
-                <li><a href="#books">Books</a></li>
-                <li><a href="#nev">NEV License</a></li>
-                <li><a href="#psc">PSC Preparation</a></li>
-                <li><a href="#login">Login</a></li>
-                <li><a href="#signup">Signup</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#license">License Prep</a></li>
+                <li><a href="#psc">PSC Prep</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="notes">
-            <h2>Semester-wise Notes</h2>
-            <div class="semester">
-                <h3 onclick="toggleVisibility('semester1')">Semester 1</h3>
-                <ul id="semester1" class="hidden">
-                    <li><a href="subject1.html">Subject 1</a></li>
-                    <li><a href="subject2.html">Subject 2</a></li>
-                    <li><a href="subject3.html">Subject 3</a></li>
-                    <li><a href="subject4.html">Subject 4</a></li>
-                    <li><a href="subject5.html">Subject 5</a></li>
-                    <li><a href="subject6.html">Subject 6</a></li>
-                    <li><a href="subject7.html">Subject 7</a></li>
-                    <li><a href="subject8.html">Subject 8</a></li>
-                </ul>
-            </div>
-            <!-- Repeat for Semesters 2 to 8 -->
-        </section>
-        <section id="books">
-            <h2>Books</h2>
-            <div class="semester">
-                <h3 onclick="toggleVisibility('books1')">Semester 1</h3>
-                <ul id="books1" class="hidden">
-                    <li><a href="book1.html">Book 1</a></li>
-                    <li><a href="book2.html">Book 2</a></li>
-                    <li><a href="book3.html">Book 3</a></li>
-                    <li><a href="book4.html">Book 4</a></li>
-                    <li><a href="book5.html">Book 5</a></li>
-                    <li><a href="book6.html">Book 6</a></li>
-                    <li><a href="book7.html">Book 7</a></li>
-                    <li><a href="book8.html">Book 8</a></li>
-                </ul>
-            </div>
-            <!-- Repeat for Semesters 2 to 8 -->
-        </section>
-        <section id="nev">
-            <h2>NEV License Preparation</h2>
-            <ul>
-                <!-- Add 30 subjects -->
-                <li><a href="nev_subject1.html">NEV Subject 1</a></li>
-                <!-- Repeat for 30 subjects -->
-            </ul>
-        </section>
-        <section id="psc">
-            <h2>PSC Preparation</h2>
-            <ul>
-                <!-- Add 30 subjects -->
-                <li><a href="psc_subject1.html">PSC Subject 1</a></li>
-                <!-- Repeat for 30 subjects -->
-            </ul>
-        </section>
-        <section id="login">
-            <h2>Login</h2>
-            <form action="login.html" method="post">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <button type="submit">Login</button>
-            </form>
-        </section>
-        <section id="signup">
-            <h2>Signup</h2>
-            <form action="signup.html" method="post" enctype="multipart/form-data">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="photo">Photo:</label>
-                <input type="file" id="photo" name="photo" accept="image/*" required>
-                <label for="profile">Profile:</label>
-                <textarea id="profile" name="profile" required></textarea>
-                <label for="university">University:</label>
-                <input type="text" id="university" name="university" required>
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <button type="submit">Signup</button>
-            </form>
-        </section>
-    </main>
+
+    <section id="hero">
+        <h1>Empowering Future Civil Engineers</h1>
+        <p>Comprehensive Solutions for Notes, License Preparation, and PSC Exams</p>
+        <a href="#resources" class="cta-button">Get Started</a>
+    </section>
+
+    <section id="about">
+        <h2>Who We Are</h2>
+        <p>Brief introduction about the website, its mission, and the team behind it.</p>
+        <img src="team-photo.jpg" alt="Team Photo">
+    </section>
+
+    <section id="resources">
+        <h2>Our Resources</h2>
+        <div class="resource">
+            <h3>Notes Solutions</h3>
+            <p>Detailed solutions for civil engineering textbooks and notes.</p>
+            <a href="#notes" class="cta-button">Learn More</a>
+        </div>
+        <div class="resource">
+            <h3>License Preparation</h3>
+            <p>Study materials and practice tests for civil engineering license exams.</p>
+            <a href="#license" class="cta-button">Learn More</a>
+        </div>
+        <div class="resource">
+            <h3>PSC Preparation</h3>
+            <p>Comprehensive guides and mock tests for Public Service Commission exams.</p>
+            <a href="#psc" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial">
+            <p>"This website has been a game-changer for my studies!" - Student A</p>
+        </div>
+        <div class="testimonial">
+            <p>"The resources here helped me ace my license exam." - Student B</p>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Latest Articles</h2>
+        <div class="blog-post">
+            <h3>Study Tips for Civil Engineering Students</h3>
+            <p>Read more...</p>
+        </div>
+        <div class="blog-post">
+            <h3>Exam Strategies for PSC Exams</h3>
+            <p>Read more...</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="contact-info">
+            <p>Email: info@yourwebsite.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+    </section>
+
     <footer>
-        <p>© 2024 Engineering Notes & Preparation. All rights reserved.</p>
+        <p>© 2024 CivPrepMaster. All rights reserved.</p>
+        <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a>
     </footer>
 </body>
 </html>
