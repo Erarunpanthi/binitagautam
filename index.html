@@ -5,84 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CivPrepMaster</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo">CivPrepMaster</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="#resources">Resources</a></li>
-                <li><a href="#license">License Prep</a></li>
-                <li><a href="#psc">PSC Prep</a></li>
-                <li><a href="contractus.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="hero">
-        <h1>Empowering Future Civil Engineers</h1>
-        <p>Comprehensive Solutions for Notes, License Preparation, and PSC Exams</p>
-        <a href="#resources" class="cta-button">Get Started</a>
-    </section>
-
-    <section id="about">
-        <h2>Who We Are</h2>
-        <p>Brief introduction about the website, its mission, and the team behind it.</p>
-        <img src="team-photo.jpg" alt="Team Photo">
-    </section>
-
-    <section id="resources">
-        <h2>Our Resources</h2>
-        <div class="resource">
-            <h3>Notes Solutions</h3>
-            <p>Detailed solutions for civil engineering textbooks and notes.</p>
-            <a href="#notes" class="cta-button">Learn More</a>
+    <div class="navbar">
+        <a href="#home"><i class="fas fa-home"></i> Home</a>
+         <a href="#resources"><i class="fas fa-book"></i> Resources</a>
+          <a href="#license-prep"><i class="fas fa-certificate"></i> License Prep</a>
+          <a href="#psc-prep"><i class="fas fa-graduation-cap"></i> PSC Prep</a>
+        <a href="#about"><i class="fas fa-info-circle"></i> About Us</a>
+      
+        <a href="#contact"><i class="fas fa-envelope"></i> Contact Us</a>
+    </div>
+    <div class="hero" id="home">
+        <h1>Welcome to CivPrepMaster</h1>
+        <p>Your ultimate resource hub for civil engineering students and professionals in Nepal!</p>
+        <a href="#note-solution-books" class="cta-button">Explore Now</a>
+    </div>
+    <div id="note-solution-books" class="section">
+        <h2>Note Solution Books</h2>
+        <p>Discover our comprehensive collection of note solution books designed to support every stage of your learning journey. From fundamental textbooks to advanced study guides, our library is tailored to meet the needs of civil engineering students and professionals.</p>
+        <div class="section" id="notes">
+            <h2>Notes</h2>
+            <p>Access a wide range of notes to help you excel in your studies.</p>
+            <a href="notes.html" class="cta-button"><i class="fas fa-sticky-note"></i> View Notes</a>
         </div>
-        <div class="resource">
-            <h3>License Preparation</h3>
-            <p>Study materials and practice tests for civil engineering license exams.</p>
-            <a href="#license" class="cta-button">Learn More</a>
+        <div class="section" id="books">
+            <h2>Books</h2>
+            <p>Explore our extensive collection of textbooks and reference books.</p>
+            <a href="books.html" class="cta-button"><i class="fas fa-book"></i> View Books</a>
         </div>
-        <div class="resource">
-            <h3>PSC Preparation</h3>
-            <p>Comprehensive guides and mock tests for Public Service Commission exams.</p>
-            <a href="#psc" class="cta-button">Learn More</a>
+        <div class="section" id="solutions">
+            <h2>Solutions</h2>
+            <p>Find detailed solutions to help you understand complex concepts.</p>
+            <a href="solutions.html" class="cta-button"><i class="fas fa-lightbulb"></i> View Solutions</a>
         </div>
-    </section>
-
-    <section id="testimonials">
-        <h2>What Our Users Say</h2>
-        <div class="testimonial">
-            <p>"This website has been a game-changer for my studies!" - Student A</p>
+    </div>
+    <div class="social-media">
+        <h2>Connect with Us</h2>
+        <p>Follow us on social media to stay updated with the latest resources and news.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="mailto:example@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
         </div>
-        <div class="testimonial">
-            <p>"The resources here helped me ace my license exam." - Student B</p>
-        </div>
-    </section>
-
-    <section id="blog">
-        <h2>Latest Articles</h2>
-        <div class="blog-post">
-            <h3>Study Tips for Civil Engineering Students</h3>
-            <p>Read more...</p>
-        </div>
-        <div class="blog-post">
-            <h3>Exam Strategies for PSC Exams</h3>
-            <p>Read more...</p>
-        </div>
-    </section>
-
-        <div class="contact-info">
-            <p>Email: erarunpanthi@gmail.com/p>
-            <p>Phone: +9867423755</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2024 CivPrepMaster. All rights reserved.</p>
-        <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a>
-    </footer>
+    </div>
+    <div class="footer">
+        <p>© 2024 CivPrepMaster. All rights reserved. <a href="#privacy-policy">Privacy Policy</a> | <a href="#terms-of-service">Terms of Service</a></p>
+    </div>
 </body>
 </html>
