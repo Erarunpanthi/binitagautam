@@ -1,24 +1,30 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #4CAF50;
+    background: #333;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
     display: flex;
     justify-content: center;
 }
@@ -30,85 +36,67 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1.1rem;
 }
 
-main {
-    padding: 2rem;
+#hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-section {
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.5rem;
     margin-bottom: 2rem;
 }
 
-section h2 {
-    color: #333;
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 0.5rem;
-}
-
-.semester h3 {
-    color: #4CAF50;
-    cursor: pointer;
-}
-
-.semester ul {
-    list-style: none;
-    padding: 0;
-    display: none;
-}
-
-.semester ul li {
-    margin: 0.5rem 0;
-}
-
-.semester ul li a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.semester ul li a:hover {
-    color: #4CAF50;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin: 0.5rem 0 0.2rem;
-}
-
-form input, form textarea, form button {
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form button {
-    background-color: #4CAF50;
+.cta-button {
+    background: #e8491d;
     color: #fff;
-    border: none;
-    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
 }
 
-form button:hover {
-    background-color: #45a049;
+#about, #resources, #testimonials, #blog, #contact {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#about img {
+    width: 80%;
+    margin-top: 1rem;
+}
+
+.resource, .testimonial, .blog-post {
+    background: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background-color: #333;
+    background: #333;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    margin-top: 2rem;
 }
 
-.hidden {
-    display: none;
+footer a {
+    color: #e8491d;
+    text-decoration: none;
+    margin: 0 0.5rem;
 }
