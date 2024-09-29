@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes by Semester</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #add8e6; /* Light blue background */
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-top: 20px;
+            color: #4CAF50;
+        }
+
+        .semester {
+            background-color: #fff;
+            border: 1px solid #ddcd;
+            border-radius: 15px; /* Rounded edges */
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .semester:hover {
+            background-color: #e0f7fa; /* Light cyan background on hover */
+            transform: scale(1.02);
+        }
+
+        .semester h2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .semester h2::before {
+            content: url('https://img.icons8.com/ios-filled/50/000000/book.png');
+        }
+
+        .subjects {
+            display: none; /* Initially hidden */
+            margin-top: 10px;
+        }
+
+        .subjects p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .subjects p a {
+            text-decoration: none;
+            color: #555;
+        }
+
+        .subjects p a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        .subjects p::before {
+            content: url('https://img.icons8.com/ios-filled/20/000000/checked.png');
+            margin-right: 10px; /* Space between icon and text */
+        }
+    </style>
+</head>
+<body>
+    <h1>Notes by Semester</h1>
+
+    <!-- Semester Sections -->
+    <div class="semester" onclick="toggleSubjects(this)">
+        <h2>Semester 1</h2>
+        <div class="subjects">
+            <p><a href="subject1.html">Subject 1</a></p>
+            <p><a href="subject2.html">Subject 2</a></p>
+            <p><a href="subject3.html">Subject 3</a></p>
+            <p><a href="subject4.html">Subject 4</a></p>
+            <p><a href="subject5.html">Subject 5</a></p>
+            <p><a href="subject6.html">Subject 6</a></p>
+            <p><a href="subject7.html">Subject 7</a></p>
+        </div>
+    </div>
+
+    <div class="semester" onclick="toggleSubjects(this)">
+        <h2>Semester 2</h2>
+        <div class="subjects">
+           <p><a href="subject1.html">Subject A</a></p>
+           <p><a href="subject2.html">Subject B</a></p>
+           <p><a href="subject3.html">Subject C</a></p>
+           <p><a href="subject4.html">Subject D</a></p>
+           <p><a href="subject5.html">Subject E</a></p>
+           <p><a href="subject6.html">Subject F</a></p>
+           <p><a href="subject7.html">Subject G</a></p>
+       </div>
+   </div>
+
+   <div class="semester" onclick="toggleSubjects(this)">
+       <h2>Semester 3</h2>
+       <div class="subjects">
+           <!-- Subjects for Semester 3 -->
+           <p><a href="subject1.html">Subject H</a></p>
+           <p><a href="subject2.html">Subject I</a></p>
+           <p><a href="subject3.html">Subject J</a></p>
+           <p><a href="subject4.html">Subject K</a></p>
+           <p><a href="subject5.html">Subject L</a></p>
+           <p><a href="subject6.html">Subject M</a></p>
+           <p><a href="subject7.html">Subject N</a></p>
+       </div>
+   </div>
+
+    <div class="semester" onclick="toggleSubjects(this)">
+       <h2>Semester 4</h2>
+       <div class="subjects">
+            <p><a href="subject1.html">Subject 1</a></p>
+            <p><a href="subject2.html">Subject 2</a></p>
+            <p><a href="subject3.html">Subject 3</a></p>
+            <p><a href="subject4.html">Subject 4</a></p>
+            <p><a href="subject5.html">Subject 5</a></p>
+            <p><a href="subject6.html">Subject 6</a></p>
+            <p><a href="subject7.html">Subject 7</a></p>
+       </div>
+   </div>
+   <div class="semester" onclick="toggleSubjects(this)">
+       <h2>Semester 5</h2>
+       <div class="subjects">
+            <p><a href="subject1.html">Subject 1</a></p>
+            <p><a href="subject2.html">Subject 2</a></p>
+            <p><a href="subject3.html">Subject 3</a></p>
+            <p><a href="subject4.html">Subject 4</a></p>
+            <p><a href="subject5.html">Subject 5</a></p>
+            <p><a href="subject6.html">Subject 6</a></p>
+            <p><a href="subject7.html">Subject 7</a></p>
+       </div>
+   </div>
+     <div class="semester" onclick="toggleSubjects(this)">
+       <h2>Semester 6</h2>
+       <div class="subjects">
+            <p><a href="subject1.html">Subject 1</a></p>
+            <p><a href="subject2.html">Subject 2</a></p>
+            <p><a href="subject3.html">Subject 3</a></p>
+            <p><a href="subject4.html">Subject 4</a></p>
+            <p><a href="subject5.html">Subject 5</a></p>
+            <p><a href="subject6.html">Subject 6</a></p>
+            <p><a href="subject7.html">Subject 7</a></p>
+       </div>
+   </div>
+    <div class="semester" onclick="toggleSubjects(this)">
+       <h2>Semester 7</h2>
+       <div class="subjects">
+            <p><a href="subject1.html">Subject 1</a></p>
+            <p><a href="subject2.html">Subject 2</a></p>
+            <p><a href="subject3.html">Subject 3</a></p>
+            <p><a href="subject4.html">Subject 4</a></p>
+            <p><a href="subject5.html">Subject 5</a></p>
+            <p><a href="subject6.html">Subject 6</a></p>
+            <p><a href="subject7.html">Subject 7</a></p>
+       </div>
+   </div>
+
+   <div class="semester" onclick="toggleSubjects(this)">
+       <h2>Semester 8</h2>
+       <div class="subjects">
+           <p><a href="subject1.html">Subject 1</a></p>
+            <p><a href="subject2.html">Subject 2</a></p>
+            <p><a href="subject3.html">Subject 3</a></p>
+               </div>
+   </div>
+
+   <!-- JavaScript Function -->
+   <script>
+       function toggleSubjects(element) {
+           // Get the semester title and subjects
+           const title = element.querySelector('h2');
+           const subjects = element.querySelector('.subjects');
+
+           // Hide all other subjects
+           const allSubjects = document.querySelectorAll('.subjects');
+           
+           allSubjects.forEach(subject => {
+               subject.style.display = 'none'; // Hide all subjects
+               subject.previousElementSibling.style.display = 'flex'; // Show all titles
+           });
+
+           // Toggle the selected semester's subjects and hide its title
+           if (subjects.style.display === 'none' || subjects.style.display === '') {
+               subjects.style.display = 'block'; // Show the subjects
+               title.style.display = 'none'; // Hide the title
+           } else {
+               subjects.style.display = 'none'; // Hide the subjects
+               title.style.display = 'flex'; // Show the title again if hiding
+           }
+       }
+   </script>
+
+</body>
+</html>
