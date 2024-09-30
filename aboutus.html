@@ -11,6 +11,23 @@
             padding: 0;
             background: linear-gradient(to right, #f4f4f4, #e0e0e0);
         }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #28a745; /* Green navbar background */
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: #fff; /* Link color */
+            padding: 14px 20px; /* Padding for links */
+            text-decoration: none; /* Remove underline */
+            text-align: center; /* Center text */
+            font-size: 18px; /* Font size */
+            transition: background-color 0.3s; /* Animation */
+        }
+        .navbar a:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
         .about-container {
             background: linear-gradient(135deg, #4CAF50, #2E7D32);
             color: #fff;
@@ -39,7 +56,7 @@
         .team-photo {
             border-radius: 50%;
             max-width: 300px;
-            height: 300px;
+            height: auto; /* Adjusted for responsiveness */
             margin-top: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
@@ -57,7 +74,7 @@
             transition: background-color 0.3s, transform 0.3s;
         }
         .cta-button:hover {
-            background-color: #ddd;
+            background-color: #ddd; /* Light gray on hover */
             transform: scale(1.05);
         }
         @media (max-width: 768px) {
@@ -70,63 +87,70 @@
             .about-container p {
                 font-size: 16px;
             }
-            .cta-button {
-                font-size: 16px;
-                padding: 8px 16px;
-            }
         }
         ul {
-            list-style-type: none;
-            padding: 0;
+            list-style-type: none; /* No bullet points */
+            padding: 0; /* Remove padding */
         }
         ul li {
-            background-color: #e0f7fa;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 5px;
-            text-align: justify;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        ul li:hover {
-            transform: translateX(10px);
-        }
-        ul li strong {
-            color: #00796b;
-        }
-        ul li span {
-            color: #4CAF50; /* Change this color as needed */
-        }
+             background-color:#e0f7fa ; 
+             margin :10 px ; 
+             padding :15 px ; 
+             border-radius :5 px ; 
+             text-align :justify ; 
+             box-shadow :0 px2 px4 px rgba(0 ,0 ,0 ,0.1); 
+             transition :transform   ease-in-out   duration-300 ms ;
+         }
+         ul li:hover {
+             transform :translateX(10 px); 
+         }
+         ul li strong {
+             color :#00796b; 
+         }
+         ul li span {
+             color :#4CAF50; 
+         }
+
     </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <div class="navbar">
+        <a href="#home"><i class="fas fa-home"></i> Home</a>
+        <a href="#resources"><i class="fas fa-book"></i> Resources</a>
+        <a href="#license-prep"><i class="fas fa-certificate"></i> License Prep</a>
+        <a href="#psc-prep"><i class="fas fa-graduation-cap"></i> PSC Prep</a>
+        <a href="aboutus.html"><i class="fas fa-info-circle"></i> About Us</a>
+        <a href="contractus.html"><i class="fas fa-envelope"></i> Contact Us</a>
+    </div>
+
     <div class="about-container">
         <h1>About Us</h1>
         <p>Welcome to CivPrepMaster, your ultimate resource hub for civil engineering students and professionals in Nepal! Our mission is to make your academic and professional journey smoother by providing easy access to essential study materials, comprehensive notes, and solutions tailored specifically for civil engineering courses.</p>
+        
         <p>At CivPrepMaster, we understand the challenges faced by students and aspiring engineers. That’s why we’ve curated a vast collection of resources, including textbooks, lecture notes, and exam solutions, all in one convenient place. Whether you’re preparing for your university exams, the Nepal Engineering Council license exam, or the Lok Sewa examinations, we’ve got you covered.</p>
-        <p style="text-align: center; font-size: 24px; font-weight: bold;">Why Choose Us?</p>
+
+        <p style="text-align:center; font-size:24px; font-weight:bold;">Why Choose Us?</p>
+        
         <ul>
-            <li>
-                <strong>Extensive Resources:</strong> <span>From fundamental textbooks to advanced study guides, our library is designed to support every stage of your learning journey.</span>
-            </li>
-            <li>
-                <strong>Expert Solutions:</strong> <span>Our materials are crafted and reviewed by experienced professionals and educators, ensuring you get accurate and reliable information.</span>
-            </li>
-            <li>
-                <strong>User-Friendly Interface:</strong> <span>Our website is designed with you in mind, making it easy to find and access the resources you need, whenever you need them.</span>
-            </li>
-            <li>
-                <strong>Community Support:</strong> <span>Join a community of like-minded individuals who share your passion for civil engineering. Exchange ideas, ask questions, and grow together.</span>
-            </li>
-        </ul>
-        <p>Our Vision</p>
-        <p>We aim to be the leading platform for civil engineering education in Nepal, empowering students and professionals to achieve their full potential. By providing high-quality, accessible resources, we strive to bridge the gap between education and practical application, fostering a new generation of skilled and knowledgeable engineers.</p>
-        <p>Join Us</p>
-        <p>Become a part of the CivPrepMaster community today and take the first step towards a successful engineering career. Together, we can build a brighter future for Nepal’s infrastructure and beyond.</p>
-        <p>Our team is dedicated to empowering future civil engineers by offering high-quality study materials and support. Whether you're preparing for exams or looking for detailed solutions to your textbooks, we've got you covered.</p>
-        <img src="https://scontent.fbwa5-1.fna.fbcdn.net/v/t39.30808-6/461088047_3813364378907024_6363138586711233948_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=hVzEAws_B_MQ7kNvgFe7rnz&_nc_ht=scontent.fbwa5-1.fna&_nc_gid=AvGaMnW7Ai5j2EVDNIEyCqt&oh=00_AYCNA8eTlIRp2y2HJmHBX2BvhjRdtFPOCdt4FYw3fM5T6Q&oe=66FE2E1C" alt="Our Team" class="team-photo">
-        <p>Join us on our journey to success and excellence in civil engineering.</p>
-        <a href="contractus.html" class="cta-button">Contact Us</a>
+           <li><strong>Extensive Resources:</strong> <span>From fundamental textbooks to advanced study guides, our library is designed to support every stage of your learning journey.</span></li>
+           <li><strong>Expert Solutions:</strong> <span>Our materials are crafted and reviewed by experienced professionals and educators, ensuring you get accurate and reliable information.</span></li>
+           <li><strong>User-Friendly Interface:</strong> <span>Our website is designed with you in mind, making it easy to find and access the resources you need, whenever you need them.</span></li>
+           <li><strong>Community Support:</strong> <span>Join a community of like-minded individuals who share your passion for civil engineering. Exchange ideas, ask questions, and grow together.</span></li>
+       </ul>
+
+       <p style="font-weight:bold;">Our Vision</p>
+       <p>We aim to be the leading platform for civil engineering education in Nepal, empowering students and professionals to achieve their full potential. By providing high-quality, accessible resources, we strive to bridge the gap between education and practical application, fostering a new generation of skilled and knowledgeable engineers.</p>
+
+       <p style="font-weight:bold;">Join Us</p>
+       <p>Become a part of the CivPrepMaster community today and take the first step towards a successful engineering career. Together, we can build a brighter future for Nepal’s infrastructure and beyond.</p>
+
+       <img src="https://scontent.fbwa5-1.fna.fbcdn.net/v/t39.30808-6/461088047_3813364378907024_6363138586711233948_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=hVzEAws_B_MQ7kNvgFe7rnz&_nc_ht=scontent.fbwa5-1.fna&_nc_gid=AvGaMnW7Ai5j2EVDNIEyCqt&oh=00_AYCNA8eTlIRp2y2HJmHBX2BvhjRdtFPOCdt4FYw3fM5T6Q&oe=66FE2E1C" alt="Our Team" class="team-photo">
+       
+       <p>Join us on our journey to success and excellence in civil engineering.</p>
+       <a href="contractus.html" class="cta-button">Contact Us</a>
     </div>
+
 </body>
 </html>
