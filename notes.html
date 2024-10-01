@@ -4,24 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notes by Semester</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #add8e6; /* Light blue background */
+            background-color: #f0f8ff; /* Light blue background */
             color: #333;
             text-align: center;
             margin: 0;
             padding: 0;
         }
 
+        header {
+            background-color: #4CAF50; /* Green background */
+            padding: 10px 0;
+            color: white;
+        }
+.navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #4CAF50; /* Green navbar background */
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: #fff; /* Link color */
+            padding: 14px 20px; /* Padding for links */
+            text-decoration: none; /* Remove underline */
+            text-align: center; /* Center text */
+            font-size: 18px; /* Font size */
+            transition: background-color 0.3s; /* Animation */
+        }
+        .navbar a:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+        .hero {
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom: 5px solid #2E7D32;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        nav a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
         h1 {
             margin-top: 20px;
-            color: #4CAF50;
         }
 
         .semester {
             background-color: #fff;
-            border: 1px solid #ddcd;
             border-radius: 15px; /* Rounded edges */
             margin: 20px auto;
             padding: 20px;
@@ -70,135 +111,209 @@
             content: url('https://img.icons8.com/ios-filled/20/000000/checked.png');
             margin-right: 10px; /* Space between icon and text */
         }
+.subjects {
+        text-align: justify;
+    }.social-media {
+           display:flex ;
+           flex-direction :column ; 
+           align-items:center ; 
+           gap :20 px ; 
+           padding :50 px ; 
+           margin-top :40 px ; 
+           background :#4CAF50 ; 
+           color:#fff ; 
+           text-align:center ; 
+           border-radius :10 px ; 
+           box-shadow :0 px4 px8 px rgba(0 ,0 ,0 ,0.1); 
+       }
+
+       .social-media h2 {
+           font-size :36 px ; 
+           margin-bottom :20 px ; 
+       }
+
+       .social-media p {
+           font-size :18 px ; 
+           margin-bottom :40 px ;
+       }
+
+       .social-media .icons {
+           display:flex ;
+           justify-content:center ;
+           gap :15px ; /* Increased gap between icons */
+       }
+
+       .social-media .icons a {
+          color:#fff ; 
+          font-size :32px ; 
+          transition :transform   ease-in-out   duration-300 ms ;
+          padding :10 px ; 
+          border-radius :50 % ; 
+          box-shadow :0 px2 px4 px rgba(0 ,0 ,0 ,0.1); 
+      }
+
+      .social-media .icons a:hover {
+          transform :scale(1.2); /* Scale effect on hover for icons */
+          background-color:#45a049 ; 
+      }
+
+      footer {
+          background-color:#4CAF50;  
+          color:#fff ;  
+          text-align:center ;  
+          padding :20 px   ;  
+          margin-top :20 px ;  
+      }  
+
+      footer a {  
+          color:#fff ;  
+          text-decoration:none ;  
+          margin :0   10 px ;  
+      }  
+
+      footer a:hover {  
+          text-decoration :underline ;  
+      }  
     </style>
-</head>
-<body>
-    <h1>Notes by Semester</h1>
-
-    <!-- Semester Sections -->
-    <div class="semester" onclick="toggleSubjects(this)">
-        <h2>Semester 1</h2>
-        <div class="subjects">
-            <p><a href="subject1.html">Subject 1</a></p>
-            <p><a href="subject2.html">Subject 2</a></p>
-            <p><a href="subject3.html">Subject 3</a></p>
-            <p><a href="subject4.html">Subject 4</a></p>
-            <p><a href="subject5.html">Subject 5</a></p>
-            <p><a href="subject6.html">Subject 6</a></p>
-            <p><a href="subject7.html">Subject 7</a></p>
-        </div>
+    <header>
+        <h1>Notes by Semester</h1>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</header>
+<boddy></boddy>
+    <div class="navbar">
+         <a href="Home.html"><i class="fas fa-home"></i> Home</a>
+         <a href="resources.html"><i class="fas fa-book"></i> Resources</a>
+         <a href="license-preparation.html"><i class="fas fa-certificate"></i> License Prep</a>
+         <a href="psc-preparation.html"><i class="fas fa-graduation-cap"></i> PSC Prep</a>
+         <a href="aboutus.html"><i class="fas fa-info-circle"></i> About Us</a>
+         <a href="contractus.html"><i class="fas fa-envelope"></i> Contact Us</a>
     </div>
-
     <div class="semester" onclick="toggleSubjects(this)">
-        <h2>Semester 2</h2>
-        <div class="subjects">
-           <p><a href="subject1.html">Subject A</a></p>
-           <p><a href="subject2.html">Subject B</a></p>
-           <p><a href="subject3.html">Subject C</a></p>
-           <p><a href="subject4.html">Subject D</a></p>
-           <p><a href="subject5.html">Subject E</a></p>
-           <p><a href="subject6.html">Subject F</a></p>
-           <p><a href="subject7.html">Subject G</a></p>
-       </div>
-   </div>
+    <h2>Semester 1</h2>
+    <div class="subjects">
+        <p><a href="subject1.html">Engineering Mathematics I</a></p>
+        <p><a href="subject2.html">Applied Mechanics I (Statics)</a></p>
+        <p><a href="subject3.html">Engineering Physics</a></p>
+        <p><a href="subject4.html">Engineering Drawing I</a></p>
+        <p><a href="subject5.html">Workshop Technology</a></p>
+        <p><a href="subject6.html">Construction Materials</a></p>
+        <p><a href="subject7.html">Basic Computer Concept and Programming</a></p>
+    </div>
+</div>
 
-   <div class="semester" onclick="toggleSubjects(this)">
-       <h2>Semester 3</h2>
-       <div class="subjects">
-           <!-- Subjects for Semester 3 -->
-           <p><a href="subject1.html">Subject H</a></p>
-           <p><a href="subject2.html">Subject I</a></p>
-           <p><a href="subject3.html">Subject J</a></p>
-           <p><a href="subject4.html">Subject K</a></p>
-           <p><a href="subject5.html">Subject L</a></p>
-           <p><a href="subject6.html">Subject M</a></p>
-           <p><a href="subject7.html">Subject N</a></p>
-       </div>
-   </div>
+<div class="semester" onclick="toggleSubjects(this)">
+    <h2>Semester 2</h2>
+    <div class="subjects">
+        <p><a href="subject1.html">Engineering Mathematics II</a></p>
+        <p><a href="subject2.html">Applied Mechanics II (Dynamics)</a></p>
+        <p><a href="subject3.html">Engineering Chemistry</a></p>
+        <p><a href="subject4.html">Engineering Drawing II</a></p>
+        <p><a href="subject5.html">Fundamentals of Thermodynamics and Heat Transfer</a></p>
+        <p><a href="subject6.html">Basic Electrical Engineering</a></p>
+        <p><a href="subject7.html">Basic Electronics Engineering</a></p>
+    </div>
+</div>
 
-    <div class="semester" onclick="toggleSubjects(this)">
-       <h2>Semester 4</h2>
-       <div class="subjects">
-            <p><a href="subject1.html">Subject 1</a></p>
-            <p><a href="subject2.html">Subject 2</a></p>
-            <p><a href="subject3.html">Subject 3</a></p>
-            <p><a href="subject4.html">Subject 4</a></p>
-            <p><a href="subject5.html">Subject 5</a></p>
-            <p><a href="subject6.html">Subject 6</a></p>
-            <p><a href="subject7.html">Subject 7</a></p>
-       </div>
-   </div>
-   <div class="semester" onclick="toggleSubjects(this)">
-       <h2>Semester 5</h2>
-       <div class="subjects">
-            <p><a href="subject1.html">Subject 1</a></p>
-            <p><a href="subject2.html">Subject 2</a></p>
-            <p><a href="subject3.html">Subject 3</a></p>
-            <p><a href="subject4.html">Subject 4</a></p>
-            <p><a href="subject5.html">Subject 5</a></p>
-            <p><a href="subject6.html">Subject 6</a></p>
-            <p><a href="subject7.html">Subject 7</a></p>
-       </div>
-   </div>
-     <div class="semester" onclick="toggleSubjects(this)">
-       <h2>Semester 6</h2>
-       <div class="subjects">
-            <p><a href="subject1.html">Subject 1</a></p>
-            <p><a href="subject2.html">Subject 2</a></p>
-            <p><a href="subject3.html">Subject 3</a></p>
-            <p><a href="subject4.html">Subject 4</a></p>
-            <p><a href="subject5.html">Subject 5</a></p>
-            <p><a href="subject6.html">Subject 6</a></p>
-            <p><a href="subject7.html">Subject 7</a></p>
-       </div>
-   </div>
-    <div class="semester" onclick="toggleSubjects(this)">
-       <h2>Semester 7</h2>
-       <div class="subjects">
-            <p><a href="subject1.html">Subject 1</a></p>
-            <p><a href="subject2.html">Subject 2</a></p>
-            <p><a href="subject3.html">Subject 3</a></p>
-            <p><a href="subject4.html">Subject 4</a></p>
-            <p><a href="subject5.html">Subject 5</a></p>
-            <p><a href="subject6.html">Subject 6</a></p>
-            <p><a href="subject7.html">Subject 7</a></p>
-       </div>
-   </div>
+<div class="semester" onclick="toggleSubjects(this)">
+    <h2>Semester 3</h2>
+    <div class="subjects">
+        <p><a href="subject1.html">Engineering Mathematics III</a></p>
+        <p><a href="subject2.html">Strength of Materials</a></p>
+        <p><a href="subject3.html">Fluid Mechanics</a></p>
+        <p><a href="subject4.html">Surveying I</a></p>
+        <p><a href="subject5.html">Engineering Geology</a></p>
+        <p><a href="subject6.html">Building Construction and Building Drawings</a></p>
+        <p><a href="subject7.html">Communication English</a></p>
+    </div>
+</div>
 
-   <div class="semester" onclick="toggleSubjects(this)">
-       <h2>Semester 8</h2>
-       <div class="subjects">
-           <p><a href="subject1.html">Subject 1</a></p>
-            <p><a href="subject2.html">Subject 2</a></p>
-            <p><a href="subject3.html">Subject 3</a></p>
-               </div>
-   </div>
+<div class="semester" onclick="toggleSubjects(this)">
+    <h2>Semester 4</h2>
+    <div class="subjects">
+        <p><a href="subject1.html">Theory of Structures I</a></p>
+        <p><a href="subject2.html">Probability and Statistics</a></p>
+        <p><a href="subject3.html">Surveying II</a></p>
+        <p><a href="subject4.html">Hydraulics</a></p>
+        <p><a href="subject5.html">Soil Mechanics</a></p>
+        <p><a href="subject6.html">Concrete Technology and Masonry Structures</a></p>
+        <p><a href="subject7.html">Numerical Methods</a></p>
+    </div>
+</div>
 
-   <!-- JavaScript Function -->
-   <script>
+<div class="semester" onclick="toggleSubjects(this)">
+    <h2>Semester 5</h2>
+    <div class="subjects">
+        <p><a href="subject1.html">Theory of Structures II</a></p>
+        <p><a href="subject2.html">Estimating and Valuation</a></p>
+        <p><a href="subject3.html">Survey Camp</a></p>
+        <p><a href="subject4.html">Engineering Economics</a></p>
+        <p><a href="subject5.html">Foundation Engineering</a></p>
+        <p><a href="subject6.html">Transportation Engineering I</a></p>
+        <p><a href="subject7.html">Engineering Hydrology</a></p>
+    </div>
+</div>
+
+<div class="semester" onclick="toggleSubjects(this)">
+    <h2>Semester 6</h2>
+    <div class="subjects">
+        <p><a href="subject1.html">Design of Steel and Timber Structures</a></p>
+        <p><a href="subject2.html">Transportation Engineering II</a></p>
+        <p><a href="subject3.html">Water Supply and Sanitary Engineering</a></p>
+        <p><a href="subject4.html">Irrigation Engineering</a></p>
+        <p><a href="subject5.html">Project Management</a></p>
+        <p><a href="subject6.html">Low volume Road</a></p>
+        <p><a href="subject7.html">Engineering Professional Practices</a></p>
+    </div>
+</div>
+<div class='semester' onclick='toggleSubjects(this)'>
+    <h2>Semester 7</h2> 
+    <div class='subjects'> 
+       <p><a href="subject4.html">Hydropower Engineering</a></p> 
+       <p><a href="subject4.html">Construction Management</a></p> 
+       <p><a href="subject4.html">Design of Reinforced Cement Concrete Structures</a></p> 
+       <p><a href="subject4.html">Sanitation Engineering </a></p> 
+       <p><a href="subject4.html">Airport Engineering </a></p> 
+       <p><a href="subject4.html">Solid Waste Management</a></p> 
+           </div> 
+ </div>
+
+<div class='semester' onclick='toggleSubjects(this)'>
+<h2>Semester 8</h2> 
+<div class='subjects'> 
+<p><a href="subject4.html">Civil Engineering Project</a></p> 
+       <p><a href="subject4.html">Internship</a></p> 
+       </div> 
+   </div>
+    <script>
        function toggleSubjects(element) {
-           // Get the semester title and subjects
-           const title = element.querySelector('h2');
            const subjects = element.querySelector('.subjects');
 
            // Hide all other subjects
            const allSubjects = document.querySelectorAll('.subjects');
-           
-           allSubjects.forEach(subject => {
-               subject.style.display = 'none'; // Hide all subjects
-               subject.previousElementSibling.style.display = 'flex'; // Show all titles
-           });
+           allSubjects.forEach(subject => subject.style.display = 'none');
 
-           // Toggle the selected semester's subjects and hide its title
+           // Toggle the selected semester's subjects
            if (subjects.style.display === 'none' || subjects.style.display === '') {
                subjects.style.display = 'block'; // Show the subjects
-               title.style.display = 'none'; // Hide the title
            } else {
                subjects.style.display = 'none'; // Hide the subjects
-               title.style.display = 'flex'; // Show the title again if hiding
            }
        }
    </script>
+   <!-- Social Media Section -->
+     <div class="social-media">
+         <h2><i class="fab fa-connectdevelop"></i> Connect with Us</h2>
+         <p>Follow us on social media to stay updated with the latest resources and news.</p>
+         <div class="icons">
+             <a href="https://www.facebook.com/profile.php?id=61566247450701" target="_blank"><i class="fab fa-facebook"></i></a>
+             <a href="https://www.tiktok.com/@er.arunpanthi" target="_blank"><i class="fab fa-tiktok"></i></a>
+             <a href="mailto:erarunpanthi@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+         </div>
+     </div>
 
+      <footer style="background-color:#4CAF50;color:white;text-align:center;padding:20px;margin-top:20px;">
+         <p>©2024 CivPrepMaster. All rights reserved. | 
+         <a href="PrivacyPolicy.html">Privacy Policy</a> | 
+         <a href="TermsofService.html">Terms of Service</a></p>
 </body>
 </html>
