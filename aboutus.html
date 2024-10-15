@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - CivPrepMaster</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -14,30 +15,30 @@
         .navbar {
             display: flex;
             justify-content: center;
-            background-color: #28a745; /* Green navbar background */
+            background-color: #28a745;
             padding: 10px 0;
         }
         .navbar a {
-            color: #fff; /* Link color */
-            padding: 14px 20px; /* Padding for links */
-            text-decoration: none; /* Remove underline */
-            text-align: center; /* Center text */
-            font-size: 18px; /* Font size */
-            transition: background-color 0.3s; /* Animation */
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 18px;
+            transition: background-color 0.3s;
         }
         .navbar a:hover {
-            background-color: #218838; /* Darker green on hover */
+            background-color: #218838;
         }
         .about-container {
             background: linear-gradient(135deg, #4CAF50, #2E7D32);
             color: #fff;
             padding: 50px 20px;
             text-align: center;
-            margin: 20px auto; /* Centered with auto margins */
+            margin: 20px auto;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             animation: fadeIn 1s ease-in-out;
-            max-width: 800px; /* Limit width for better readability */
+            max-width: 800px;
         }
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -57,7 +58,7 @@
         .team-photo {
             border-radius: 50%;
             max-width: 300px;
-            height: auto; /* Adjusted for responsiveness */
+            height: auto;
             margin-top: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s;
@@ -67,55 +68,51 @@
         }
         .cta-button {
             background-color: #fff;
-            color: #28a745; /* Match the navbar color */
-            padding: 12px 25px; /* Adjusted padding */
+            color: #28a745;
+            padding: 12px 25px;
             text-decoration: none;
             border-radius: 5px;
             font-size: 18px;
-            transition: background-color 0.3s ease, transform 0.3s ease; /* Animation */
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
         .cta-button:hover {
-            background-color: #ddd; /* Light gray on hover */
+            background-color: #ddd;
             transform: scale(1.05);
         }
         @media (max-width: 768px) {
             .about-container {
-                padding: 30px; /* Reduced padding for smaller screens */
-                margin-left :10 px ; 
-                margin-right :10 px ; 
-                margin-top :10 px ; 
-                margin-bottom :10 px ; 
-             } 
-             .about-container h1 {
-                font-size :28 px ;
-             } 
-             .about-container p {
-                font-size :16 px ;
-             } 
-         }
-         ul {
-             list-style-type:none ; /* No bullet points */
-             padding :0 ; /* Remove padding */
-         }
-         ul li {
-             background-color:#e0f7fa ; 
-             margin :10 px ; 
-             padding :15 px ; 
-             border-radius :5 px ; 
-             text-align :justify ; 
-             box-shadow :0 px2 px4 px rgba(0 ,0 ,0 ,0.1); 
-             transition :transform   ease-in-out   duration-300 ms ;
-         }
-         ul li:hover {
-             transform :translateX(10 px); 
-         }
-         ul li strong {
-             color :#00796b; 
-         }
-         ul li span {
-             color :#4CAF50; 
-         }
-.social-media {
+                padding: 30px;
+            }
+            .about-container h1 {
+                font-size: 28px;
+            }
+            .about-container p {
+                font-size: 16px;
+            }
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background-color: #e0f7fa;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: justify;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        ul li:hover {
+            transform: translateX(5px);
+        }
+        ul li strong {
+            color: #00796b;
+        }
+        ul li span {
+            color: #4CAF50;
+        }
+        .social-media {
             background: linear-gradient(135deg, #4CAF50, #2E7D32);
             color: white;
             padding: 50px 20px;
@@ -135,36 +132,34 @@
             gap: 20px;
         }
         .social-media .icons a {
-           color:#fff;
-           font-size :36px ; 
-           transition :transform0.3 s ; 
-       }
-       .social-media .icons a:hover { 
-           transform :scale(1.2); 
-       }
-       footer {
-           background-color:#4CAF50;  
-           color:#fff ;  
-           text-align:center ;  
-           padding :20 px   ;  
-           margin-top :20 px ;  
-       }  
-       footer a {  
-           color:#fff ;  
-           text-decoration:none ;  
-           margin :0   10 px ;  
-       }  
-       footer a:hover {  
-           text-decoration :underline ;  
-       }  
+            color: #fff;
+            font-size: 36px;
+            transition: transform 0.3s;
+        }
+        .social-media .icons a:hover {
+            transform: scale(1.2);
+        }
+        footer {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="navbar">
-        <a href="Home.html"><i class="fas fa-home"></i> Home</a>
-        <a href="resources. html"><i class="fas fa-book"></i> Resources</a>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="resources.html"><i class="fas fa-book"></i> Resources</a>
         <a href="license-preparation.html"><i class="fas fa-certificate"></i> License Prep</a>
         <a href="psc-preparation.html"><i class="fas fa-graduation-cap"></i> PSC Prep</a>
         <a href="aboutus.html"><i class="fas fa-info-circle"></i> About Us</a>
@@ -180,50 +175,47 @@
         <p style="text-align:center; font-size:24px; font-weight:bold;">Why Choose Us?</p>
         
         <ul>
-           <li><strong>Extensive Resources:</strong> <span>From fundamental textbooks to advanced study guides, our library is designed to support every stage of your learning journey.</span></li>
-           <li><strong>Expert Solutions:</strong> <span>Our materials are crafted and reviewed by experienced professionals and educators.</span></li>
-           <li><strong>User-Friendly Interface:</strong> <span>Our website is designed with you in mind.</span></li>
-           <li><strong>Community Support:</strong> <span>Join a community of like-minded individuals who share your passion for civil engineering.</span></li>
-       </ul>
+            <li><strong>Extensive Resources:</strong> <span>From fundamental textbooks to advanced study guides, our library supports every stage of your learning journey.</span></li>
+            <li><strong>Expert Solutions:</strong> <span>Our materials are crafted and reviewed by experienced professionals and educators.</span></li>
+            <li><strong>User-Friendly Interface:</strong> <span>Our website is designed with you in mind.</span></li>
+            <li><strong>Community Support:</strong> <span>Join a community of like-minded individuals who share your passion for civil engineering.</span></li>
+        </ul>
 
-       <p style="font-weight:bold;">Our Vision</p>
-       <p>We aim to be the leading platform for civil engineering education in Nepal.</p>
+        <p style="font-weight:bold;">Our Vision</p>
+        <p>We aim to be the leading platform for civil engineering education in Nepal.</p>
 
-       <p style="font-weight:bold;">Join Us</p>
-       <p>Become a part of the CivPrepMaster community today!</p>
+        <p style="font-weight:bold;">Join Us</p>
+        <p>Become a part of the CivPrepMaster community today!</p>
 
-       <!-- Author Information Section -->
-       <div class="author-info">
-           <h2><i class="fas fa-user"></i> About the Author</h2>
-           <p><strong>Name:</strong> Er. Arun Panthi</p>
-           <p><strong>Bachelor's Degree:</strong> Passed from Mid-West University</p>
-           <p><strong>Location:</strong> Tamghas, Gulmi</p>
-           <p><strong>Facebook ID:</strong> <a href="https://www.facebook.com/profile.php?id=61566247450701" target="_blank">Er. Arun Panthi</a></p>
-       </div>
+        <div class="author-info">
+            <h2><i class="fas fa-user"></i> About the Author</h2>
+            <p><strong>Name:</strong> Er. Arun Panthi</p>
+            <p><strong>Bachelor's Degree:</strong> Graduated from Mid-West University</p>
+            <p><strong>Location:</strong> Tamghas, Gulmi</p>
+            <p><strong>Facebook ID:</strong> <a href="https://www.facebook.com/profile.php?id=61566247450701" target="_blank">Er. Arun Panthi</a></p>
+        </div>
 
-       <img src="https://scontent.fbwa5-1.fna.fbcdn.net/v/t39.30808-6/461088047_3813364378907024_6363138586711233948_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=hVzEAws_B_MQ7kNvgFe7rnz&_nc_ht=scontent.fbwa5-1.fna&_nc_gid=AvGaMnW7Ai5j2EVDNIEyCqt&oh=00_AYCNA8eTlIRp2y2HJmHBX2BvhjRdtFPOCdt4FYw3fM5T6Q&oe=66FE2E1C" alt="Our Team" class="team-photo">
+        <img src="https://scontent.fbwa5-1.fna.fbcdn.net/v/t39.30808-6/461088047_3813364378907024_6363138586711233948_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=hVzEAws_B_MQ7kNvgFe7rnz&_nc_ht=scontent.fbwa5-1.fna&_nc_gid=AvGaMnW7Ai5j2EVDNIEyCqt&oh=00_AYCNA8eTlIRp2y2HJmHBX2BvhjRdtFPOCdt4FYw3fM5T6Q&oe=66FE2E1C" alt="Our Team" class="team-photo">
        
-       <p>Join us on our journey to success and excellence in civil engineering.</p>
-       <a href="contractus.html" class="cta-button">Contact Us</a>
+        <p>Join us on our journey to success and excellence in civil engineering.</p>
+        <a href="contractus.html" class="cta-button">Contact Us</a>
     </div>
 
-    <!-- Added Social Media Section -->
     <div class="social-media">
-         <h2><i class="fab fa-connectdevelop"></i> Connect with Us</h2>
-         <p>Follow us on social media to stay updated with the latest resources and news.</p>
-         <div class="icons">
-             <a href="https://www.facebook.com/arun.panthi27" target="_blank"><i class="fab fa-facebook"></i></a>
-             <a href="https://www.tiktok.com/@er.arunpanthi" target="_blank"><i class="fab fa-tiktok"></i></a>
-             <a href="mailto:erarunpanthi@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-         </div>
-     </div>
+        <h2><i class="fab fa-connectdevelop"></i> Connect with Us</h2>
+        <p>Follow us on social media to stay updated with the latest resources and news.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/arun.panthi27" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@er.arunpanthi" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="mailto:erarunpanthi@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
 
-     <!-- Footer Section -->
-     <footer style="background-color:#4CAF50;color:white;text-align:center;padding:20px;margin-top:20px;">
-         <p>©2024 CivPrepMaster. All rights reserved. | 
-         <a href="PrivacyPolicy.html">Privacy Policy</a> | 
-         <a href="TermsofService.html">Terms of Service</a></p>
-     </footer>
+    <footer>
+        <p>©2024 CivPrepMaster. All rights reserved. | 
+        <a href="PrivacyPolicy.html">Privacy Policy</a> | 
+        <a href="TermsofService.html">Terms of Service</a></p>
+    </footer>
 
 </body>
 </html>
