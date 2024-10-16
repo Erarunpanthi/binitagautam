@@ -17,7 +17,7 @@
 
         header {
             background-color: #388E3C; /* Dark green header */
-            padding: 20px 0;
+            padding: 15px 0;
             color: white;
         }
 
@@ -31,9 +31,9 @@
 
         .navbar a {
             color: #fff; /* Link color */
-            padding: 10px 15px; /* Padding for links */
+            padding: 8px 10px; /* Reduced padding for compactness */
             text-decoration: none; /* Remove underline */
-            font-size: 16px; /* Font size */
+            font-size: 14px; /* Smaller font size */
             transition: background-color 0.3s; /* Animation */
         }
 
@@ -44,31 +44,31 @@
         .hero {
             background: linear-gradient(135deg, #4CAF50, #2E7D32);
             color: #fff;
-            padding: 40px 20px;
+            padding: 30px 15px; /* Reduced padding */
             text-align: center;
             border-bottom: 5px solid #1B5E20;
         }
 
         .hero h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
+            font-size: 30px;
+            margin-bottom: 8px; /* Reduced margin */
         }
 
         .hero p {
-            font-size: 20px;
-            margin-bottom: 20px;
+            font-size: 18px;
+            margin-bottom: 15px; /* Reduced margin */
         }
 
         .semester {
             background-color: #fff;
-            border-radius: 15px; /* Rounded edges */
-            margin: 20px auto;
-            padding: 15px;
+            border-radius: 10px; /* Rounded edges */
+            margin: 15px auto; /* Reduced margin */
+            padding: 10px;
             width: 90%; /* Adjusted for mobile */
             max-width: 600px; /* Maximum width for larger screens */
             cursor: pointer;
             transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
 
         .semester:hover {
@@ -80,22 +80,23 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
-            font-size: 24px;
+            gap: 8px; /* Reduced gap */
+            font-size: 22px;
+            color: #388E3C; /* Green color for text */
         }
 
         .semester h2::before {
-            content: url('https://img.icons8.com/ios-filled/50/000000/book.png');
+            content: url('https://img.icons8.com/color/50/000000/book.png'); /* Colorful book icon */
         }
 
         .subjects {
             display: none; /* Initially hidden */
-            margin-top: 10px;
+            margin-top: 5px; /* Reduced margin */
             text-align: left; /* Align subjects to the left */
         }
 
         .subjects p {
-            margin: 5px 0;
+            margin: 4px 0; /* Reduced margin */
             color: #555;
         }
 
@@ -109,16 +110,16 @@
         }
 
         .subjects p::before {
-            content: url('https://img.icons8.com/ios-filled/20/000000/checked.png');
-            margin-right: 10px; /* Space between icon and text */
+            content: url('https://img.icons8.com/color/20/000000/checked.png'); /* Colorful check icon */
+            margin-right: 5px; /* Reduced space between icon and text */
         }
 
         .social-media {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 20px;
-            padding: 30px;
+            gap: 15px; /* Reduced gap */
+            padding: 25px; /* Reduced padding */
             margin-top: 40px;
             background: #388E3C; /* Dark green background */
             color: #fff;
@@ -128,32 +129,32 @@
         }
 
         .social-media h2 {
-            font-size: 30px;
-            margin-bottom: 10px;
+            font-size: 28px; /* Adjusted heading size */
+            margin-bottom: 8px; /* Reduced margin */
         }
 
         .social-media p {
-            font-size: 16px;
-            margin-bottom: 20px;
+            font-size: 14px; /* Smaller paragraph */
+            margin-bottom: 15px; /* Reduced margin */
         }
 
         .social-media .icons {
             display: flex;
             justify-content: center;
-            gap: 15px; /* Increased gap between icons */
+            gap: 12px; /* Reduced gap between icons */
         }
 
         .social-media .icons a {
             color: #fff;
-            font-size: 30px;
+            font-size: 28px; /* Adjusted icon size */
             transition: transform ease-in-out 0.3s;
-            padding: 10px;
+            padding: 8px; /* Reduced padding */
             border-radius: 50%;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .social-media .icons a:hover {
-            transform: scale(1.2); /* Scale effect on hover for icons */
+            transform: scale(1.1); /* Scale effect on hover for icons */
             background-color: #2E7D32;
         }
 
@@ -161,14 +162,14 @@
             background-color: #388E3C; /* Dark green footer */
             color: #fff;
             text-align: center;
-            padding: 15px;
+            padding: 10px; /* Reduced padding */
             margin-top: 20px;
         }
 
         footer a {
             color: #fff;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 8px; /* Reduced margin */
         }
 
         footer a:hover {
@@ -178,34 +179,34 @@
         /* Responsive styles */
         @media (max-width: 768px) {
             .navbar a {
-                padding: 10px 5px; /* Adjust padding for smaller screens */
-                font-size: 14px; /* Smaller font size */
+                padding: 8px 5px; /* Adjust padding for smaller screens */
+                font-size: 12px; /* Smaller font size */
             }
 
             .hero h1 {
-                font-size: 28px; /* Adjust hero heading size */
+                font-size: 26px; /* Adjust hero heading size */
             }
 
             .hero p {
-                font-size: 18px; /* Adjust hero paragraph size */
+                font-size: 16px; /* Adjust hero paragraph size */
             }
 
             .semester h2 {
-                font-size: 22px; /* Adjust semester heading size */
+                font-size: 20px; /* Adjust semester heading size */
             }
         }
 
         @media (max-width: 480px) {
             .hero {
-                padding: 30px 10px; /* Smaller padding on mobile */
+                padding: 20px 10px; /* Smaller padding on mobile */
             }
 
             .social-media h2 {
-                font-size: 24px; /* Smaller social media heading */
+                font-size: 22px; /* Smaller social media heading */
             }
 
             .social-media p {
-                font-size: 14px; /* Smaller social media paragraph */
+                font-size: 12px; /* Smaller social media paragraph */
             }
         }
     </style>
@@ -249,9 +250,9 @@
         <div class="subjects">
             <p><a href="subject1.html">Engineering Mathematics II</a></p>
             <p><a href="subject2.html">Applied Mechanics II (Dynamics)</a></p>
-            <p><a href="subject3.html">Engineering Chemistry</a></p>
-            <p><a href="subject4.html">Engineering Drawing II</a></p>
-            <p><a href="subject5.html">Thermodynamics and Heat Transfer</a></p>
+            <p><a href="subject3.html">Electrical Technology</a></p>
+            <p><a href="subject4.html">Engineering Chemistry</a></p>
+            <p><a href="subject5.html">Engineering Drawing II</a></p>
             <p><a href="subject6.html">Basic Electrical Engineering</a></p>
             <p><a href="subject7.html">Basic Electronics Engineering</a></p>
         </div>
