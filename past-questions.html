@@ -26,14 +26,14 @@
             flex-wrap: wrap; 
             justify-content: center;
             background-color: #4caf50; /* Green navbar */
-            padding: 10px 0;
+            padding: 15px 0; /* Increased padding */
         }
 
         .navbar a {
             color: #fff; 
-            padding: 10px 15px; 
+            padding: 12px 20px; /* Increased padding */
             text-decoration: none; 
-            font-size: 15px; 
+            font-size: 16px; 
             transition: background-color 0.3s; 
             border-radius: 5px; /* Rounded corners */
         }
@@ -45,31 +45,31 @@
         .hero {
             background: linear-gradient(135deg, #81c784, #4caf50);
             color: #fff;
-            padding: 40px 15px; 
+            padding: 20px 15px; /* Reduced padding */
             text-align: center;
             border-bottom: 5px solid #388e3c;
         }
 
         .hero h1 {
-            font-size: 32px;
-            margin-bottom: 10px; 
+            font-size: 28px; /* Adjusted size */
+            margin-bottom: 5px; 
         }
 
         .hero p {
-            font-size: 20px;
-            margin-bottom: 20px; 
+            font-size: 18px; /* Adjusted size */
+            margin-bottom: 10px; 
         }
 
         .semester {
             background-color: #fff;
             border-radius: 10px; 
-            margin: 20px auto; 
-            padding: 20px;
+            margin: 10px auto; /* Reduced margin */
+            padding: 15px; /* Reduced padding */
             width: 90%; 
-            max-width: 600px; 
+            max-width: 400px; /* Smaller width */
             cursor: pointer;
             transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
         }
 
         .semester:hover {
@@ -82,39 +82,12 @@
             align-items: center;
             justify-content: center;
             gap: 10px; 
-            font-size: 24px;
+            font-size: 20px; /* Adjusted size */
             color: #2e7d32; 
         }
 
         .semester h2::before {
             content: url('https://img.icons8.com/color/50/000000/book.png'); 
-        }
-
-        .subjects {
-            display: none; 
-            margin-top: 10px; 
-            text-align: left; 
-        }
-
-        .subjects p {
-            margin: 6px 0; 
-            color: #555;
-        }
-
-        .subjects p a {
-            text-decoration: none;
-            color: #388e3c;
-            transition: color 0.3s; /* Color transition */
-        }
-
-        .subjects p a:hover {
-            color: #2e7d32; /* Darker green on hover */
-            text-decoration: underline; 
-        }
-
-        .subjects p::before {
-            content: url('https://img.icons8.com/color/20/000000/checked.png'); 
-            margin-right: 5px; 
         }
 
         .social-media {
@@ -182,26 +155,26 @@
         /* Responsive styles */
         @media (max-width: 768px) {
             .navbar a {
-                padding: 8px 5px; 
+                padding: 10px 8px; 
                 font-size: 14px; 
             }
 
             .hero h1 {
-                font-size: 28px; 
+                font-size: 26px; 
             }
 
             .hero p {
-                font-size: 18px; 
+                font-size: 16px; 
             }
 
             .semester h2 {
-                font-size: 22px; 
+                font-size: 18px; 
             }
         }
 
         @media (max-width: 480px) {
             .hero {
-                padding: 20px 10px; 
+                padding: 15px 10px; 
             }
 
             .social-media h2 {
@@ -235,120 +208,37 @@
         <p>Access past questions and resources by semester.</p>
     </div>
 
-    <div class="semester" onclick="toggleSubjects(this)">
+    <div class="semester" onclick="window.location.href='semester1.html'">
         <h2>Semester 1</h2>
-        <div class="subjects">
-            <p><a href="subject1.html">Mathematics I</a></p>
-            <p><a href="subject2.html">Mechanics I</a></p>
-            <p><a href="subject3.html">Physics Fundamentals</a></p>
-            <p><a href="subject4.html">Engineering Drawing Basics</a></p>
-            <p><a href="subject5.html">Workshop Practices</a></p>
-            <p><a href="subject6.html">Materials Science</a></p>
-            <p><a href="subject7.html">Intro to Programming</a></p>
-        </div>
     </div>
 
-    <div class="semester" onclick="toggleSubjects(this)">
+    <div class="semester" onclick="window.location.href='semester2.html'">
         <h2>Semester 2</h2>
-        <div class="subjects">
-            <p><a href="subject1.html">Mathematics II</a></p>
-            <p><a href="subject2.html">Mechanics II</a></p>
-            <p><a href="subject3.html">Electrical Basics</a></p>
-            <p><a href="subject4.html">Chemistry for Engineers</a></p>
-            <p><a href="subject5.html">Advanced Drawing Techniques</a></p>
-            <p><a href="subject6.html">Fundamentals of Electrical Engineering</a></p>
-            <p><a href="subject7.html">Electronics Basics</a></p>
-        </div>
     </div>
 
-    <div class="semester" onclick="toggleSubjects(this)">
+    <div class="semester" onclick="window.location.href='semester3.html'">
         <h2>Semester 3</h2>
-        <div class="subjects">
-            <p><a href="subject1.html">Mathematics III</a></p>
-            <p><a href="subject2.html">Strength of Materials</a></p>
-            <p><a href="subject3.html">Fluid Mechanics</a></p>
-            <p><a href="subject4.html">Surveying Basics</a></p>
-            <p><a href="subject5.html">Geology for Engineers</a></p>
-            <p><a href="subject6.html">Construction Techniques</a></p>
-            <p><a href="subject7.html">Communication Skills</a></p>
-        </div>
     </div>
 
-    <div class="semester" onclick="toggleSubjects(this)">
+    <div class="semester" onclick="window.location.href='semester4.html'">
         <h2>Semester 4</h2>
-        <div class="subjects">
-            <p><a href="subject1.html">Theory of Structures I</a></p>
-            <p><a href="subject2.html">Statistics for Engineers</a></p>
-            <p><a href="subject3.html">Advanced Surveying</a></p>
-            <p><a href="subject4.html">Hydraulics Principles</a></p>
-            <p><a href="subject5.html">Soil Mechanics Overview</a></p>
-            <p><a href="subject6.html">Concrete Technology Essentials</a></p>
-            <p><a href="subject7.html">Numerical Analysis</a></p>
-        </div>
     </div>
 
-    <div class="semester" onclick="toggleSubjects(this)">
+    <div class="semester" onclick="window.location.href='semester5.html'">
         <h2>Semester 5</h2>
-        <div class="subjects">
-            <p><a href="subject1.html">Theory of Structures II</a></p>
-            <p><a href="subject2.html">Cost Estimation Techniques</a></p>
-            <p><a href="subject3.html">Field Survey Camp</a></p>
-            <p><a href="subject4.html">Engineering Economics Principles</a></p>
-            <p><a href="subject5.html">Foundation Engineering Basics</a></p>
-            <p><a href="subject6.html">Transportation Engineering I</a></p>
-            <p><a href="subject7.html">Hydrology Fundamentals</a></p>
-        </div>
     </div>
 
-    <div class="semester" onclick="toggleSubjects(this)">
+    <div class="semester" onclick="window.location.href='semester6.html'">
         <h2>Semester 6</h2>
-        <div class="subjects">
-            <p><a href="subject1.html">Design of Structures</a></p>
-            <p><a href="subject2.html">Transportation Engineering II</a></p>
-            <p><a href="subject3.html">Sanitary Engineering</a></p>
-            <p><a href="subject4.html">Irrigation Engineering Techniques</a></p>
-            <p><a href="subject5.html">Project Management Basics</a></p>
-            <p><a href="subject6.html">Low Volume Road Design</a></p>
-            <p><a href="subject7.html">Professional Practices in Engineering</a></p>
-        </div>
     </div>
 
-    <div class="semester" onclick="toggleSubjects(this)">
+    <div class="semester" onclick="window.location.href='semester7.html'">
         <h2>Semester 7</h2>
-        <div class="subjects">
-            <p><a href="subject1.html">Renewable Energy Engineering</a></p>
-            <p><a href="subject2.html">Construction Management Essentials</a></p>
-            <p><a href="subject3.html">Design of Reinforced Structures</a></p>
-            <p><a href="subject4.html">Sanitation Engineering Principles</a></p>
-            <p><a href="subject5.html">Airport Engineering Basics</a></p>
-            <p><a href="subject6.html">Waste Management Techniques</a></p>
-        </div>
     </div>
 
-    <div class="semester" onclick="toggleSubjects(this)">
+    <div class="semester" onclick="window.location.href='semester8.html'">
         <h2>Semester 8</h2>
-        <div class="subjects">
-            <p><a href="subject1.html">Final Engineering Project</a></p>
-            <p><a href="subject2.html">Internship Experience</a></p>
-        </div>
     </div>
-
-    <script>
-        function toggleSubjects(element) {
-            const subjects = element.querySelector('.subjects');
-
-            // Hide all other subjects
-            const allSubjects = document.querySelectorAll('.subjects');
-            allSubjects.forEach(subject => subject.style.display = 'none');
-
-            // Toggle the selected semester's subjects
-            if (subjects.style.display === 'none' || subjects.style.display === '') {
-                subjects.style.display = 'block'; // Show the subjects
-            } else {
-                subjects.style.display = 'none'; // Hide the subjects
-            }
-        }
-    </script>
 
     <div class="social-media">
         <h2><i class="fab fa-connectdevelop"></i> Connect with Us</h2>
@@ -367,3 +257,4 @@
     </footer>
 </body>
 </html>
+
