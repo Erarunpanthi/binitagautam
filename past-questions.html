@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Questions by Semester</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4c3; /* Light yellow background */
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #558b2f; /* Dark green header */
+            padding: 15px 0;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;
+            background-color: #4caf50; /* Green navbar */
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: #fff; 
+            padding: 10px 15px; 
+            text-decoration: none; 
+            font-size: 15px; 
+            transition: background-color 0.3s; 
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        .navbar a:hover {
+            background-color: #388e3c; /* Darker green on hover */
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #81c784, #4caf50);
+            color: #fff;
+            padding: 40px 15px; 
+            text-align: center;
+            border-bottom: 5px solid #388e3c;
+        }
+
+        .hero h1 {
+            font-size: 32px;
+            margin-bottom: 10px; 
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px; 
+        }
+
+        .semester {
+            background-color: #fff;
+            border-radius: 10px; 
+            margin: 20px auto; 
+            padding: 20px;
+            width: 90%; 
+            max-width: 600px; 
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .semester:hover {
+            background-color: #dcedc8; /* Light green background on hover */
+            transform: scale(1.02);
+        }
+
+        .semester h2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px; 
+            font-size: 24px;
+            color: #2e7d32; 
+        }
+
+        .semester h2::before {
+            content: url('https://img.icons8.com/color/50/000000/book.png'); 
+        }
+
+        .subjects {
+            display: none; 
+            margin-top: 10px; 
+            text-align: left; 
+        }
+
+        .subjects p {
+            margin: 6px 0; 
+            color: #555;
+        }
+
+        .subjects p a {
+            text-decoration: none;
+            color: #388e3c;
+            transition: color 0.3s; /* Color transition */
+        }
+
+        .subjects p a:hover {
+            color: #2e7d32; /* Darker green on hover */
+            text-decoration: underline; 
+        }
+
+        .subjects p::before {
+            content: url('https://img.icons8.com/color/20/000000/checked.png'); 
+            margin-right: 5px; 
+        }
+
+        .social-media {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px; 
+            padding: 30px; 
+            margin-top: 40px;
+            background: #558b2f; 
+            color: #fff;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-media h2 {
+            font-size: 30px; 
+            margin-bottom: 10px; 
+        }
+
+        .social-media p {
+            font-size: 14px; 
+            margin-bottom: 10px; 
+        }
+
+        .social-media .icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px; 
+        }
+
+        .social-media .icons a {
+            color: #fff;
+            font-size: 28px; 
+            transition: transform ease-in-out 0.3s;
+            padding: 10px; 
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-media .icons a:hover {
+            transform: scale(1.1); 
+            background-color: #4caf50;
+        }
+
+        footer {
+            background-color: #558b2f; 
+            color: #fff;
+            text-align: center;
+            padding: 15px; 
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px; 
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .navbar a {
+                padding: 8px 5px; 
+                font-size: 14px; 
+            }
+
+            .hero h1 {
+                font-size: 28px; 
+            }
+
+            .hero p {
+                font-size: 18px; 
+            }
+
+            .semester h2 {
+                font-size: 22px; 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 20px 10px; 
+            }
+
+            .social-media h2 {
+                font-size: 24px; 
+            }
+
+            .social-media p {
+                font-size: 12px; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Past Questions by Semester</h1>
+    </header>
+    
+    <div class="navbar">
+        <a href="Home.html"><i class="fas fa-home"></i> Home</a>
+        <a href="resources.html"><i class="fas fa-book"></i> Resources</a>
+        <a href="license-preparation.html"><i class="fas fa-certificate"></i> License Prep</a>
+        <a href="psc-preparation.html"><i class="fas fa-graduation-cap"></i> PSC Prep</a>
+        <a href="aboutus.html"><i class="fas fa-info-circle"></i> About Us</a>
+        <a href="contactus.html"><i class="fas fa-envelope"></i> Contact Us</a>
+        <a href="feedback.html"><i class="fas fa-comments"></i> Feedback</a>
+        <a href="support.html"><i class="fas fa-headset"></i> Support</a>
+    </div>
+
+    <div class="hero">
+        <h1>Welcome to Your Study Hub!</h1>
+        <p>Access past questions and resources by semester.</p>
+    </div>
+
+    <div class="semester" onclick="toggleSubjects(this)">
+        <h2>Semester 1</h2>
+        <div class="subjects">
+            <p><a href="subject1.html">Mathematics I</a></p>
+            <p><a href="subject2.html">Mechanics I</a></p>
+            <p><a href="subject3.html">Physics Fundamentals</a></p>
+            <p><a href="subject4.html">Engineering Drawing Basics</a></p>
+            <p><a href="subject5.html">Workshop Practices</a></p>
+            <p><a href="subject6.html">Materials Science</a></p>
+            <p><a href="subject7.html">Intro to Programming</a></p>
+        </div>
+    </div>
+
+    <div class="semester" onclick="toggleSubjects(this)">
+        <h2>Semester 2</h2>
+        <div class="subjects">
+            <p><a href="subject1.html">Mathematics II</a></p>
+            <p><a href="subject2.html">Mechanics II</a></p>
+            <p><a href="subject3.html">Electrical Basics</a></p>
+            <p><a href="subject4.html">Chemistry for Engineers</a></p>
+            <p><a href="subject5.html">Advanced Drawing Techniques</a></p>
+            <p><a href="subject6.html">Fundamentals of Electrical Engineering</a></p>
+            <p><a href="subject7.html">Electronics Basics</a></p>
+        </div>
+    </div>
+
+    <div class="semester" onclick="toggleSubjects(this)">
+        <h2>Semester 3</h2>
+        <div class="subjects">
+            <p><a href="subject1.html">Mathematics III</a></p>
+            <p><a href="subject2.html">Strength of Materials</a></p>
+            <p><a href="subject3.html">Fluid Mechanics</a></p>
+            <p><a href="subject4.html">Surveying Basics</a></p>
+            <p><a href="subject5.html">Geology for Engineers</a></p>
+            <p><a href="subject6.html">Construction Techniques</a></p>
+            <p><a href="subject7.html">Communication Skills</a></p>
+        </div>
+    </div>
+
+    <div class="semester" onclick="toggleSubjects(this)">
+        <h2>Semester 4</h2>
+        <div class="subjects">
+            <p><a href="subject1.html">Theory of Structures I</a></p>
+            <p><a href="subject2.html">Statistics for Engineers</a></p>
+            <p><a href="subject3.html">Advanced Surveying</a></p>
+            <p><a href="subject4.html">Hydraulics Principles</a></p>
+            <p><a href="subject5.html">Soil Mechanics Overview</a></p>
+            <p><a href="subject6.html">Concrete Technology Essentials</a></p>
+            <p><a href="subject7.html">Numerical Analysis</a></p>
+        </div>
+    </div>
+
+    <div class="semester" onclick="toggleSubjects(this)">
+        <h2>Semester 5</h2>
+        <div class="subjects">
+            <p><a href="subject1.html">Theory of Structures II</a></p>
+            <p><a href="subject2.html">Cost Estimation Techniques</a></p>
+            <p><a href="subject3.html">Field Survey Camp</a></p>
+            <p><a href="subject4.html">Engineering Economics Principles</a></p>
+            <p><a href="subject5.html">Foundation Engineering Basics</a></p>
+            <p><a href="subject6.html">Transportation Engineering I</a></p>
+            <p><a href="subject7.html">Hydrology Fundamentals</a></p>
+        </div>
+    </div>
+
+    <div class="semester" onclick="toggleSubjects(this)">
+        <h2>Semester 6</h2>
+        <div class="subjects">
+            <p><a href="subject1.html">Design of Structures</a></p>
+            <p><a href="subject2.html">Transportation Engineering II</a></p>
+            <p><a href="subject3.html">Sanitary Engineering</a></p>
+            <p><a href="subject4.html">Irrigation Engineering Techniques</a></p>
+            <p><a href="subject5.html">Project Management Basics</a></p>
+            <p><a href="subject6.html">Low Volume Road Design</a></p>
+            <p><a href="subject7.html">Professional Practices in Engineering</a></p>
+        </div>
+    </div>
+
+    <div class="semester" onclick="toggleSubjects(this)">
+        <h2>Semester 7</h2>
+        <div class="subjects">
+            <p><a href="subject1.html">Renewable Energy Engineering</a></p>
+            <p><a href="subject2.html">Construction Management Essentials</a></p>
+            <p><a href="subject3.html">Design of Reinforced Structures</a></p>
+            <p><a href="subject4.html">Sanitation Engineering Principles</a></p>
+            <p><a href="subject5.html">Airport Engineering Basics</a></p>
+            <p><a href="subject6.html">Waste Management Techniques</a></p>
+        </div>
+    </div>
+
+    <div class="semester" onclick="toggleSubjects(this)">
+        <h2>Semester 8</h2>
+        <div class="subjects">
+            <p><a href="subject1.html">Final Engineering Project</a></p>
+            <p><a href="subject2.html">Internship Experience</a></p>
+        </div>
+    </div>
+
+    <script>
+        function toggleSubjects(element) {
+            const subjects = element.querySelector('.subjects');
+
+            // Hide all other subjects
+            const allSubjects = document.querySelectorAll('.subjects');
+            allSubjects.forEach(subject => subject.style.display = 'none');
+
+            // Toggle the selected semester's subjects
+            if (subjects.style.display === 'none' || subjects.style.display === '') {
+                subjects.style.display = 'block'; // Show the subjects
+            } else {
+                subjects.style.display = 'none'; // Hide the subjects
+            }
+        }
+    </script>
+
+    <div class="social-media">
+        <h2><i class="fab fa-connectdevelop"></i> Connect with Us</h2>
+        <p>Follow us on social media to stay updated with the latest resources and news.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=61566247450701" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@er.arunpanthi" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="mailto:erarunpanthi@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>©2024 CivPrepMaster. All rights reserved. | 
+        <a href="PrivacyPolicy.html">Privacy Policy</a> | 
+        <a href="TermsofService.html">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
