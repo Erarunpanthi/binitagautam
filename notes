@@ -56,7 +56,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
-            max-width: 600px; /* Center the sections */
+            max-width: 600px;
         }
         .section:hover {
             transform: translateY(-5px);
@@ -167,13 +167,18 @@
         <a href="contactus"><i class="fas fa-envelope"></i> Contact Us</a>
     </div>
 
-    <div class="hero">
+    <div class="hero" id="home">
         <h1>Welcome to CivPrepMaster</h1>
         <p>Your ultimate resource hub for civil engineering students and professionals in Nepal!</p>
     </div>
 
     <div class="section" id="nec-license-notes">
-        <h2>BE Civil NEC License Notes</h2>
+        <h2>BE Civil Notes</h2>
+        <p>Access comprehensive notes tailored for the BE Civil NEC License exam.</p>
+        <a href="notes" class="cta-button">View NEC Notes</a>
+    </div>
+     <div class="section" id="nec-license-notes">
+        <h2>NEC License Notes</h2>
         <p>Access comprehensive notes tailored for the BE Civil NEC License exam.</p>
         <a href="nec-notes" class="cta-button">View NEC Notes</a>
     </div>
