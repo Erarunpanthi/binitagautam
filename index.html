@@ -173,10 +173,17 @@
             text-decoration: underline;
         }
     </style>
+    <script>
+        // Redirect from URL with .html extension to clean URL
+        if (window.location.pathname.endsWith('.html')) {
+            const cleanUrl = window.location.pathname.replace('.html', '');
+            window.location.replace(cleanUrl);
+        }
+    </script>
 </head>
 <body>
     <div class="navbar">
-        <a href="Home"><i class="fas fa-home"></i> Home</a>
+        <a href="index"><i class="fas fa-home"></i> Home</a>
         <a href="resources"><i class="fas fa-book"></i> Resources</a>
         <a href="license-preparation"><i class="fas fa-certificate"></i> License Prep</a>
         <a href="psc-preparation"><i class="fas fa-graduation-cap"></i> PSC Prep</a>
@@ -199,7 +206,7 @@
     <div class="section" id="past-questions">
         <h2><i class="fas fa-question-circle"></i> Past Questions</h2>
         <p>Explore past exam questions to help you prepare effectively.</p>
-        <a href="past questions" class="cta-button"><i class="fas fa-question-circle"></i> View Past Questions</a>
+        <a href="past-questions" class="cta-button"><i class="fas fa-question-circle"></i> View Past Questions</a>
     </div>
 
     <div class="section" id="notes">
