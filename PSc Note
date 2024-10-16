@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subjects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e8f5e9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #388E3C;
+            padding: 15px 0;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .navbar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #2E7D32;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: #fff;
+            padding: 8px 15px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #1B5E20;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 15px;
+            padding: 20px;
+            width: 250px;
+            height: 150px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card:hover {
+            background-color: #d0f0c0;
+            transform: scale(1.05);
+        }
+
+        .card h3 {
+            font-size: 18px;
+            color: #388E3C;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .button {
+            background-color: #388E3C;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.3s;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: #1B5E20;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #388E3C;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .navbar a {
+                padding: 8px 5px;
+                font-size: 12px;
+            }
+
+            .card {
+                width: 90%;
+                height: auto;
+            }
+
+            .button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        PSc Notes 
+    </header>
+        <div class="navbar">
+        <a href="Home.html"><i class="fas fa-home"></i> Home</a>
+        <a href="resources.html"><i class="fas fa-book"></i> Resources</a>
+        <a href="license-preparation.html"><i class="fas fa-certificate"></i> License Prep</a>
+        <a href="psc-preparation.html"><i class="fas fa-graduation-cap"></i> PSC Prep</a>
+        <a href="aboutus.html"><i class="fas fa-info-circle"></i> About Us</a>
+        <a href="contactus.html"><i class="fas fa-envelope"></i> Contact Us</a>
+        <a href="feedback.html"><i class="fas fa-comments"></i> Feedback</a>
+        <a href="support.html"><i class="fas fa-headset"></i> Support</a>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <h3><a href="subject1.html">Engineering Mathematics I</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject2.html">Applied Mechanics I (Statics)</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject3.html">Engineering Physics</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject4.html">Engineering Drawing I</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject5.html">Workshop Technology</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject6.html">Construction Materials</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject7.html">Basic Computer Concept and Programming</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject8.html">Engineering Mathematics II</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject9.html">Applied Mechanics II (Dynamics)</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject10.html">Electrical Technology</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject11.html">Engineering Chemistry</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject12.html">Engineering Drawing II</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject13.html">Basic Electrical Engineering</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject14.html">Basic Electronics Engineering</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject15.html">Engineering Mathematics III</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject16.html">Strength of Materials</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject17.html">Fluid Mechanics</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject18.html">Surveying I</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject19.html">Engineering Geology</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject20.html">Building Construction</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject21.html">Communication English</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject22.html">Theory of Structures I</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject23.html">Probability and Statistics</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject24.html">Surveying II</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject25.html">Hydraulics</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject26.html">Soil Mechanics</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject27.html">Concrete Technology and Masonry Structures</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject28.html">Numerical Methods</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject29.html">Theory of Structures II</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject30.html">Estimating and Valuation</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject31.html">Survey Camp</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject32.html">Engineering Economics</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject33.html">Foundation Engineering</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject34.html">Transportation Engineering I</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject35.html">Engineering Hydrology</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject36.html">Design of Steel and Timber Structures</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject37.html">Transportation Engineering II</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject38.html">Water Supply and Sanitary Engineering</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject39.html">Irrigation Engineering</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject40.html">Project Management</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject41.html">Low Volume Road</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject42.html">Engineering Professional Practices</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject43.html">Hydropower Engineering</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject44.html">Construction Management</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject45.html">Design of Reinforced Cement Concrete Structures</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject46.html">Sanitation Engineering</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject47.html">Airport Engineering</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject48.html">Solid Waste Management</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject49.html">Civil Engineering Project</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <h3><a href="subject50.html">Internship</a></h3>
+            <button class="button">Learn More</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>©2024 CivPrepMaster. All rights reserved. | 
+        <a href="PrivacyPolicy.html">Privacy Policy</a> | 
+        <a href="TermsofService.html">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
