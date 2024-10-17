@@ -26,7 +26,10 @@
             background-color: #2E7D32; /* Darker green navbar */
             padding: 10px 0;
         }
-
+        .navbar .group {
+            display: flex;
+            justify-content: center;
+        }
         .navbar a {
             color: #fff; /* Link color */
             padding: 8px 10px; /* Reduced padding for compactness */
@@ -34,11 +37,9 @@
             font-size: 14px; /* Smaller font size */
             transition: background-color 0.3s; /* Animation */
         }
-
         .navbar a:hover {
             background-color: #1B5E20; /* Even darker green on hover */
         }
-
         .hero {
             background: linear-gradient(135deg, #4CAF50, #2E7D32);
             color: #fff;
@@ -146,12 +147,16 @@
 <body>
 
     <div class="navbar" id="navbar">
-        <a href="Home"><i class="fas fa-home"></i> Home</a>
-        <a href="resources"><i class="fas fa-book"></i> Resources</a>
-        <a href="license-preparation"><i class="fas fa-certificate"></i> NEC License</a>
-        <a href="nec-prep"><i class="fas fa-graduation-cap"></i> PSC</a>
-        <a href="aboutus"><i class="fas fa-info-circle"></i> About Us</a>
-        <a href="contactus"><i class="fas fa-envelope"></i> Contact Us</a>
+        <div class="group">
+            <a href="Home"><i class="fas fa-home"></i> Home</a>
+            <a href="resources"><i class="fas fa-book"></i> Resources</a>
+            <a href="license-preparation"><i class="fas fa-certificate"></i> NEC License</a>
+        </div>
+        <div class="group">
+            <a href="nec-prep"><i class="fas fa-graduation-cap"></i> PSC</a>
+            <a href="aboutus"><i class="fas fa-info-circle"></i> About Us</a>
+            <a href="contactus"><i class="fas fa-envelope"></i> Contact Us</a>
+        </div>
     </div>
 
     <div class="hero">
