@@ -8,45 +8,44 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4; /* Light background color */
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
         }
         .navbar {
             display: flex;
             justify-content: center;
-            background-color: #28a745; /* Green navbar background */
+            background-color: #28a745;
             padding: 10px 0;
         }
         .navbar a {
-            color: #fff; /* Link color */
-            padding: 14px 20px; /* Padding for links */
-            text-decoration: none; /* Remove underline */
-            text-align: center; /* Center text */
-            font-size: 18px; /* Font size */
-            transition: background-color 0.3s; /* Animation */
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 16px;
+            transition: background-color 0.3s;
         }
         .navbar a:hover {
-            background-color: #218838; /* Darker green on hover */
+            background-color: #218838;
         }
         .container {
-            width: 50%;
-            margin: auto;
-            overflow: hidden;
+            max-width: 600px;
+            margin: 2rem auto;
             padding: 2rem;
             background: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 2rem;
             border-radius: 10px;
         }
         h1 {
             text-align: center;
-            color: #00796b; /* Darker green for headings */
+            color: #00796b;
+            margin-bottom: 1rem;
         }
         label {
             display: block;
             margin: 1rem 0 0.5rem;
-            color: #00796b; /* Darker green for labels */
+            color: #00796b;
         }
         input, select, textarea {
             width: 100%;
@@ -54,29 +53,33 @@
             margin-bottom: 1rem;
             border: 1px solid #ccc;
             border-radius: 5px;
+            transition: border 0.3s;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: #00796b;
         }
         button {
             display: block;
             width: 100%;
             padding: 0.75rem;
-            background: #00796b; /* Darker green button */
-            color: #fff; /* Button text color */
+            background: #00796b;
+            color: #fff;
             border: none;
             border-radius: 5px;
             font-size: 1rem;
             cursor: pointer;
+            transition: background 0.3s;
         }
         button:hover {
-            background: #004d40; /* Even darker green on hover */
+            background: #004d40;
         }
-        .icon {
-            margin-right: 0.5rem;
-        }
-         .social-media {
+        .social-media {
             background: linear-gradient(135deg, #4CAF50, #2E7D32);
             color: white;
             padding: 50px 20px;
             text-align: center;
+            margin-top: 2rem;
+            border-radius: 10px;
         }
         .social-media h2 {
             font-size: 36px;
@@ -92,81 +95,91 @@
             gap: 20px;
         }
         .social-media .icons a {
-           color:#fff;
-           font-size :36px ; 
-           transition :transform0.3 s ; 
-       }
-       .social-media .icons a:hover { 
-           transform :scale(1.2); 
-       }
-         footer {  
-             background-color:#4CAF50;  
-             color:#fff ;  
-             text-align:center ;  
-             padding :20 px   ;  
-             margin-top :20 px ;  
-         }  
-         footer a {  
-             color:#fff ;  
-             text-decoration:none ;  
-             margin :0   10 px ;  
-         }  
-         footer a:hover {  
-             text-decoration :underline ;  
-         }  
-
+            color: #fff;
+            font-size: 36px;
+            transition: transform 0.3s;
+        }
+        .social-media .icons a:hover {
+            transform: scale(1.2);
+        }
+        footer {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            button {
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="navbar">
-        <a href="Home.html"><i class="fas fa-home"></i> Home</a>
-        <a href="resources.html"><i class="fas fa-book"></i> Resources</a>
-        <a href="license-preparation.html"><i class="fas fa-certificate"></i> License Prep</a>
-        <a href="psc-preparation.html"><i class="fas fa-graduation-cap"></i> PSC Prep</a>
-        <a href="aboutus.html"><i class="fas fa-info-circle"></i> About Us</a>
-        <a href="contractus.html"><i class="fas fa-envelope"></i> Contact Us</a>
+        <a href="Home"><i class="fas fa-home"></i> Home</a>
+        <a href="resources"><i class="fas fa-book"></i> Resources</a>
+        <a href="license-preparation"><i class="fas fa-certificate"></i> License Prep</a>
+        <a href="psc-preparation"><i class="fas fa-graduation-cap"></i> PSC Prep</a>
+        <a href="aboutus"><i class="fas fa-info-circle"></i> About Us</a>
+        <a href="contactus"><i class="fas fa-envelope"></i> Contact Us</a>
     </div>
 
     <div class="container">
         <h1>Contact Us</h1>
         <form id="contact-form">
-            <label for="first-name"><i class="fas fa-user icon"></i>First Name<span style="color:red;">*</span>:</label>
+            <label for="first-name"><i class="fas fa-user icon"></i> First Name<span style="color:red;">*</span>:</label>
             <input type="text" id="first-name" name="first-name" required>
 
-            <label for="middle-name"><i class="fas fa-user icon"></i>Middle Name:</label>
+            <label for="middle-name"><i class="fas fa-user icon"></i> Middle Name:</label>
             <input type="text" id="middle-name" name="middle-name">
 
-            <label for="last-name"><i class="fas fa-user icon"></i>Last Name<span style="color:red;">*</span>:</label>
+            <label for="last-name"><i class="fas fa-user icon"></i> Last Name<span style="color:red;">*</span>:</label>
             <input type="text" id="last-name" name="last-name" required>
 
-            <label for="address"><i class="fas fa-map-marker-alt icon"></i>Address<span style="color:red;">*</span>:</label>
+            <label for="address"><i class="fas fa-map-marker-alt icon"></i> Address<span style="color:red;">*</span>:</label>
             <input type="text" id="address" name="address" required>
 
-            <label for="university"><i class="fas fa-university icon"></i>University<span style="color:red;">*</span>:</label>
-              <select id="university" name="university" required>
+            <label for="university"><i class="fas fa-university icon"></i> University<span style="color:red;">*</span>:</label>
+            <select id="university" name="university" required>
                 <option value="" disabled selected>Select your university</option>
                 <option value="Tribhuvan University">Tribhuvan University</option>
-<option value="Pokhara University">Pokhara University</option>
-<option value="Mid-West University">Mid-West University</option>
-<option value="Purbanchal University">Purbanchal University</option>
-<option value="Kathmandu University">Kathmandu University</option>
-<option value="Nepal Engineering College">Nepal Engineering College</option>
-<option value="Kathmandu Engineering College">Kathmandu Engineering College</option>
-<option value="Kantipur Engineering College">Kantipur Engineering College</option>
-<option value="Himalaya College of Engineering">Himalaya College of Engineering</option>
-<option value="National College of Engineering">National College of Engineering</option>
-<option value="Advanced College of Engineering and Management">Advanced College of Engineering and Management</option>
-<option value="Pulchowk Campus, Institute of Engineering">Pulchowk Campus, Institute of Engineering</option>
-<option value="Khwopa College of Engineering">Khwopa College of Engineering</option>
-<option value="Cosmos College of Management and Technology">Cosmos College of Management and Technology</option>
-<option value="Gandaki College of Engineering and Science">Gandaki College of Engineering and Science</option>
-<option value="Madan Bhandari Memorial Academy">Madan Bhandari Memorial Academy</option>
-<option value="Pokhara Engineering College">Pokhara Engineering College</option>
-<option value="Rapti Engineering College">Rapti Engineering College</option>
-              </select>
+                <option value="Pokhara University">Pokhara University</option>
+                <option value="Mid-West University">Mid-West University</option>
+                <option value="Purbanchal University">Purbanchal University</option>
+                <option value="Kathmandu University">Kathmandu University</option>
+                <option value="Nepal Engineering College">Nepal Engineering College</option>
+                <option value="Kathmandu Engineering College">Kathmandu Engineering College</option>
+                <option value="Kantipur Engineering College">Kantipur Engineering College</option>
+                <option value="Himalaya College of Engineering">Himalaya College of Engineering</option>
+                <option value="National College of Engineering">National College of Engineering</option>
+                <option value="Advanced College of Engineering and Management">Advanced College of Engineering and Management</option>
+                <option value="Pulchowk Campus, Institute of Engineering">Pulchowk Campus, Institute of Engineering</option>
+                <option value="Khwopa College of Engineering">Khwopa College of Engineering</option>
+                <option value="Cosmos College of Management and Technology">Cosmos College of Management and Technology</option>
+                <option value="Gandaki College of Engineering and Science">Gandaki College of Engineering and Science</option>
+                <option value="Madan Bhandari Memorial Academy">Madan Bhandari Memorial Academy</option>
+                <option value="Pokhara Engineering College">Pokhara Engineering College</option>
+                <option value="Rapti Engineering College">Rapti Engineering College</option>
+            </select>
 
-              <label for="semester"><i class="fas fa-calendar-alt icon"></i>Semester<span style="color:red;">*</span>:</label>
-              <select id="semester" name="semester" required>
+            <label for="semester"><i class="fas fa-calendar-alt icon"></i> Semester<span style="color:red;">*</span>:</label>
+            <select id="semester" name="semester" required>
                 <option value="" disabled selected>Select your semester</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -176,116 +189,113 @@
                 <option value="6">6</option>
                 <option value="7">7</option>
                 <option value="8">8</option>
-              </select>
+            </select>
 
-                            <label for ="district"><i class ="fas fa-map icon"></i>District<span style ="color:red;">*</span>:</label >
-              <select id ="district" name ="district" required >
-                  <option value="" disabled selected>Select your district</option>
-                              <option value="Achham">Achham</option>
-    <option value="Arghakhanchi">Arghakhanchi</option>
-    <option value="Baglung">Baglung</option>
-    <option value="Baitadi">Baitadi</option>
-    <option value="Bajhang">Bajhang</option>
-    <option value="Bajura">Bajura</option>
-    <option value="Banke">Banke</option>
-    <option value="Bara">Bara</option>
-    <option value="Bhaktapur">Bhaktapur</option>
-    <option value="Bhojpur">Bhojpur</option>
-    <option value="Chitwan">Chitwan</option>
-    <option value="Dadeldhura">Dadeldhura</option>
-    <option value="Darchula">Darchula</option>
-    <option value="Dailekh">Dailekh</option>
-    <option value="Dang Deukhuri">Dang Deukhuri</option>
-    <option value="Dhanusa">Dhanusa</option>
-    <option value="Dolakha">Dolakha</option>
-    <option value="Dolpa">Dolpa</option>
-    <option value="Eastern Rukum">Eastern Rukum</option>
-     <option value="Waste Rukum">Waste Rukum</option>
-    <option value="Gorkha">Gorkha</option>
-    <option value="Gulmi">Gulmi</option>
-    <option value="Humla">Humla</option>
-    <option value="Ilam">Ilam</option>
-    <option value="Jajarkot">Jajarkot</option>
-    <option value="Janjanpur">Janjanpur</option>
-    <option value="Kailali">Kailali</option>
-    <option value="Kanchanpur">Kanchanpur</option>
-    <option value="Kapilvastu">Kapilvastu</option>
-    <option value="Kaski">Kaski</option>
-    <option value="Kathmandu">Kathmandu </option>
-    <option  value ="Kavrepalanchok"> Kavrepalanchok </option >
-     <option  value ="Lalitpur" > Lalitpur </option >
-     <option  value ="Lamjung" > Lamjung </option >
-     <option  value ="Mahakali (Darchula)" > Mahakali (Darchula) </option >
-     <option  value ="Makwanpur" > Makwanpur </option >
-     <option  value ="Manang" > Manang </option >
-     <option  value ="Morang" > Morang </option >
-     <option  value ="Nawalpur (Nawalparasi East)" > Nawalpur (Nawalparasi East) </option >
-     <option  value ="Nawalparasi" > Nawalparasi East</option >
-     <option  value ="Nuwakot" > Nuwakot </option >
-     <option  value ="Okhaldhunga" > Okhaldhunga </option >
-     <option  value ="Palpa" > Palpa </option >
-     <option  value ="Panchthar" > Panchthar </option >
-     <option  value ="Parbat" > Parbat </option >
-     <option  value ="Patan" > Patan </option >
-     <option  value ="Parsa" > Parsa </option >
-     <option  value ="Ramechhap" > Ramechhap </option >
-     <option  value ="Rautahat" > Rautahat </option >
-     <option  value ="Rolpa" > Rolpa </option >
-     <option  value ="Rukum" > Rukum </option >
-     <option  value ="Salyan" > Salyan </option >
-     <option  value ="Sindhuli" > Sindhuli </option >
-     <option  value ="Sindhupalchok" > Sindhupalchok </option >
-     <option  value ="Surkhet" > Surkhet </option >
-     <option  value ="Syangja" > Syangja </option >
-     <option  value ="Tanahun" > Tanahun </option >
-     <option  value ="Taplejung" > Taplejung </option >
-     <option  value ="Terhathum" > Terhathum </option >
-     <option  value ="Udayapur" > Udayapur </option >
-     <option  value ="Western Rukum" > Western Rukum </option >
-              </select >
+            <label for="district"><i class="fas fa-map icon"></i> District<span style="color:red;">*</span>:</label>
+            <select id="district" name="district" required>
+                <option value="" disabled selected>Select your district</option>
+                <option value="Achham">Achham</option>
+                <option value="Arghakhanchi">Arghakhanchi</option>
+                <option value="Baglung">Baglung</option>
+                <option value="Baitadi">Baitadi</option>
+                <option value="Bajhang">Bajhang</option>
+                <option value="Bajura">Bajura</option>
+                <option value="Banke">Banke</option>
+                <option value="Bara">Bara</option>
+                <option value="Bhaktapur">Bhaktapur</option>
+                <option value="Bhojpur">Bhojpur</option>
+                <option value="Chitwan">Chitwan</option>
+                <option value="Dadeldhura">Dadeldhura</option>
+                <option value="Darchula">Darchula</option>
+                <option value="Dailekh">Dailekh</option>
+                <option value="Dang Deukhuri">Dang Deukhuri</option>
+                <option value="Dhanusa">Dhanusa</option>
+                <option value="Dolakha">Dolakha</option>
+                <option value="Dolpa">Dolpa</option>
+                <option value="Eastern Rukum">Eastern Rukum</option>
+                <option value="Waste Rukum">Waste Rukum</option>
+                <option value="Gorkha">Gorkha</option>
+                <option value="Gulmi">Gulmi</option>
+                <option value="Humla">Humla</option>
+                <option value="Ilam">Ilam</option>
+                <option value="Jajarkot">Jajarkot</option>
+                <option value="Janjanpur">Janjanpur</option>
+                <option value="Kailali">Kailali</option>
+                <option value="Kanchanpur">Kanchanpur</option>
+                <option value="Kapilvastu">Kapilvastu</option>
+                <option value="Kaski">Kaski</option>
+                <option value="Kathmandu">Kathmandu</option>
+                <option value="Kavrepalanchok">Kavrepalanchok</option>
+                <option value="Lalitpur">Lalitpur</option>
+                <option value="Lamjung">Lamjung</option>
+                <option value="Mahakali (Darchula)">Mahakali (Darchula)</option>
+                <option value="Makwanpur">Makwanpur</option>
+                <option value="Manang">Manang</option>
+                <option value="Morang">Morang</option>
+                <option value="Nawalpur (Nawalparasi East)">Nawalpur (Nawalparasi East)</option>
+                <option value="Nawalparasi">Nawalparasi East</option>
+                <option value="Nuwakot">Nuwakot</option>
+                <option value="Okhaldhunga">Okhaldhunga</option>
+                <option value="Palpa">Palpa</option>
+                <option value="Panchthar">Panchthar</option>
+                <option value="Parbat">Parbat</option>
+                <option value="Patan">Patan</option>
+                <option value="Parsa">Parsa</option>
+                <option value="Ramechhap">Ramechhap</option>
+                <option value="Rautahat">Rautahat</option>
+                <option value="Rolpa">Rolpa</option>
+                <option value="Rukum">Rukum</option>
+                <option value="Salyan">Salyan</option>
+                <option value="Sindhuli">Sindhuli</option>
+                <option value="Sindhupalchok">Sindhupalchok</option>
+                <option value="Surkhet">Surkhet</option>
+                <option value="Syangja">Syangja</option>
+                <option value="Tanahun">Tanahun</option>
+                <option value="Taplejung">Taplejung</option>
+                <option value="Terhathum">Terhathum</option>
+                <option value="Udayapur">Udayapur</option>
+                <option value="Western Rukum">Western Rukum</option>
+            </select>
 
-              <!-- Message Section -->
-              <label for = "message"><i class = "fas fa-envelope icon"></i>Message<span style = "color:red;">*</span>:</label >
-              <textarea id = "message" name = "message" rows = "5" required ></textarea >
+            <label for="message"><i class="fas fa-envelope icon"></i> Message<span style="color:red;">*</span>:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-              <!-- Submit Button -->
-              <button type = "submit">Send Message</button >
-          </form >
-      </div >
-      <div class="social-media">
-         <h2><i class="fab fa-connectdevelop"></i> Connect with Us</h2>
-         <p>Follow us on social media to stay updated with the latest resources and news.</p>
-         <div class="icons">
-             <a href="https://www.facebook.com/profile.php?id=61566247450701" target="_blank"><i class="fab fa-facebook"></i></a>
-             <a href="https://www.tiktok.com/@er.arunpanthi" target="_blank"><i class="fab fa-tiktok"></i></a>
-             <a href="mailto:erarunpanthi@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-         </div>
-      </div >
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
 
-      <!-- Footer Section -->
-      <footer style = "background-color:#4CAF50;color:white;text-align:center;padding:20px;margin-top:20px;">
-          <p > ©2024 CivPrepMaster. All rights reserved. | 
-          <a href = "PrivacyPolicy.html">Privacy Policy </ a > | 
-          <a href = "TermsofService.html ">Terms of Service </ a ></p >
-      </footer >
+    <div class="social-media">
+        <h2><i class="fab fa-connectdevelop"></i> Connect with Us</h2>
+        <p>Follow us on social media to stay updated with the latest resources and news.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=61566247450701" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@er.arunpanthi" target="_blank"><i class="fab fa-tiktok"></i></a>
+              <a href="https://www.youtube.com/@Arunpanthisblog" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="mailto:erarunpanthi@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
 
-      <!-- JavaScript to handle form submission -->
-      <script >
-          document.getElementById('contact-form').addEventListener('submit', function(event) {
-              event.preventDefault();
-              const firstName = document.getElementById('first-name').value;
-              const middleName = document.getElementById('middle-name').value;
-              const lastName = document.getElementById('last-name').value;
-              const address = document.getElementById('address').value;
-              const university = document.getElementById('university').value;
-              const semester = document.getElementById('semester').value;
-              const district = document.getElementById('district').value;
-              const message = document.getElementById('message').value;
+    <footer>
+        <p>© 2024 CivPrepMaster. All rights reserved. | 
+        <a href="PrivacyPolicy">Privacy Policy</a> | 
+        <a href="TermsofService">Terms of Service</a></p>
+    </footer>
 
-              const mailtoLink = `mailto:erarunpanthi@gmail.com?subject=Contact%20Form%20Submission&body=First%20Name:%20${firstName}%0AMiddle%20Name:%20${middleName}%0ALast%20Name:%20${lastName}%0AAddress:%20${address}%0AUniversity:%20${university}%0ASemester:%20${semester}%0ADistrict:%20${district}%0AMessage:%20${message}`;
-              window.location.href = mailtoLink;
-          });
-      </script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const firstName = document.getElementById('first-name').value;
+            const middleName = document.getElementById('middle-name').value;
+            const lastName = document.getElementById('last-name').value;
+            const address = document.getElementById('address').value;
+            const university = document.getElementById('university').value;
+            const semester = document.getElementById('semester').value;
+            const district = document.getElementById('district').value;
+            const message = document.getElementById('message').value;
 
-    </body>
-    </html>
+            const mailtoLink = `mailto:erarunpanthi@gmail.com?subject=Contact%20Form%20Submission&body=First%20Name:%20${firstName}%0AMiddle%20Name:%20${middleName}%0ALast%20Name:%20${lastName}%0AAddress:%20${address}%0AUniversity:%20${university}%0ASemester:%20${semester}%0ADistrict:%20${district}%0AMessage:%20${message}`;
+            window.location.href = mailtoLink;
+        });
+    </script>
+</body>
+</html>
