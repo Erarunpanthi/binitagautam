@@ -14,21 +14,28 @@
         }
         .navbar {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            background-color: #28a745;
+            background-color: #2E7D32;
             padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
+
         .navbar a {
-            color: #fff;
-            padding: 14px 20px;
-            text-decoration: none;
+            flex: 1;
             text-align: center;
-            font-size: 16px;
-            transition: background-color 0.3s;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            color: white; /* Changed to white */
+            transition: background 0.3s, transform 0.2s;
         }
+
         .navbar a:hover {
-            background-color: #218838;
+            background-color: #1B5E20;
+            transform: scale(1.05);
         }
+
         .container {
             max-width: 600px;
             margin: 2rem auto;
@@ -117,15 +124,9 @@
         footer a:hover {
             text-decoration: underline;
         }
-        @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
-            }
-            h1 {
-                font-size: 24px;
-            }
-            button {
-                font-size: 0.9rem;
+        @media (min-width: 769px) {
+            .navbar a {
+                flex: none; /* Maintain original size for larger screens */
             }
         }
     </style>
@@ -213,7 +214,7 @@
                 <option value="Dolakha">Dolakha</option>
                 <option value="Dolpa">Dolpa</option>
                 <option value="Eastern Rukum">Eastern Rukum</option>
-                <option value="Waste Rukum">Waste Rukum</option>
+                <option value="Western Rukum">Western Rukum</option>
                 <option value="Gorkha">Gorkha</option>
                 <option value="Gulmi">Gulmi</option>
                 <option value="Humla">Humla</option>
@@ -232,8 +233,7 @@
                 <option value="Makwanpur">Makwanpur</option>
                 <option value="Manang">Manang</option>
                 <option value="Morang">Morang</option>
-                <option value="Nawalpur (Nawalparasi East)">Nawalpur (Nawalparasi East)</option>
-                <option value="Nawalparasi">Nawalparasi East</option>
+                <option value="Nawalpur">Nawalpur</option>
                 <option value="Nuwakot">Nuwakot</option>
                 <option value="Okhaldhunga">Okhaldhunga</option>
                 <option value="Palpa">Palpa</option>
@@ -254,7 +254,6 @@
                 <option value="Taplejung">Taplejung</option>
                 <option value="Terhathum">Terhathum</option>
                 <option value="Udayapur">Udayapur</option>
-                <option value="Western Rukum">Western Rukum</option>
             </select>
 
             <label for="message"><i class="fas fa-envelope icon"></i> Message<span style="color:red;">*</span>:</label>
@@ -270,11 +269,10 @@
         <div class="icons">
             <a href="https://www.facebook.com/profile.php?id=61566247450701" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://www.tiktok.com/@er.arunpanthi" target="_blank"><i class="fab fa-tiktok"></i></a>
-              <a href="https://www.youtube.com/@Arunpanthisblog" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.youtube.com/@Arunpanthisblog" target="_blank"><i class="fab fa-youtube"></i></a>
             <a href="mailto:erarunpanthi@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
         </div>
     </div>
-
     <footer>
         <p>© 2024 CivPrepMaster. All rights reserved. | 
         <a href="PrivacyPolicy">Privacy Policy</a> | 
