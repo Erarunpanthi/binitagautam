@@ -186,56 +186,57 @@
             }
         }
     </style>
-     <script>
-                if (window.location.pathname.endsWith('.html')) {
+    <script>
+        // Remove ".html" from URL on page load
+        window.addEventListener('load', function() {
             const cleanUrl = window.location.pathname.replace('.html', '');
-            window.location.replace(cleanUrl);
-        }
+            if (cleanUrl !== window.location.pathname) {
+                window.history.replaceState({}, document.title, cleanUrl);
+            }
+        });
     </script>
 </head>
 <body>
-   
     <div class="navbar">
-        <a href="Home.html"><i class="fas fa-home"></i> Home</a>
-        <a href="resources.html"><i class="fas fa-book"></i> Resources</a>
-        <a href="license-preparation.html"><i class="fas fa-certificate"></i> License Prep</a>
-        <a href="psc-preparation.html"><i class="fas fa-graduation-cap"></i> PSC Prep</a>
-        <a href="aboutus.html"><i class="fas fa-info-circle"></i> About Us</a>
-        <a href="contactus.html"><i class="fas fa-envelope"></i> Contact Us</a>
-        <a href="feedback.html"><i class="fas fa-comments"></i> Feedback</a>
-        <a href="support.html"><i class="fas fa-headset"></i> Support</a>
+        <a href="Home"><i class="fas fa-home"></i> Home</a>
+        <a href="resources"><i class="fas fa-book"></i> Resources</a>
+        <a href="license-preparation"><i class="fas fa-certificate"></i> License Prep</a>
+        <a href="psc-preparation"><i class="fas fa-graduation-cap"></i> PSC Prep</a>
+        <a href="aboutus"><i class="fas fa-info-circle"></i> About Us</a>
+        <a href="contactus"><i class="fas fa-envelope"></i> Contact Us</a>
+        <a href="feedback"><i class="fas fa-comments"></i> Feedback</a>
+        <a href="support"><i class="fas fa-headset"></i> Support</a>
     </div>
 
-   
-    <div class="semester" onclick="window.location.href='semester1.html'">
+    <div class="semester" onclick="window.location.href='semester1'">
         <h2>Semester 1</h2>
     </div>
 
-    <div class="semester" onclick="window.location.href='semester2.html'">
+    <div class="semester" onclick="window.location.href='semester2'">
         <h2>Semester 2</h2>
     </div>
 
-    <div class="semester" onclick="window.location.href='semester3.html'">
+    <div class="semester" onclick="window.location.href='semester3'">
         <h2>Semester 3</h2>
     </div>
 
-    <div class="semester" onclick="window.location.href='semester4.html'">
+    <div class="semester" onclick="window.location.href='semester4'">
         <h2>Semester 4</h2>
     </div>
 
-    <div class="semester" onclick="window.location.href='semester5.html'">
+    <div class="semester" onclick="window.location.href='semester5'">
         <h2>Semester 5</h2>
     </div>
 
-    <div class="semester" onclick="window.location.href='semester6.html'">
+    <div class="semester" onclick="window.location.href='semester6'">
         <h2>Semester 6</h2>
     </div>
 
-    <div class="semester" onclick="window.location.href='semester7.html'">
+    <div class="semester" onclick="window.location.href='semester7'">
         <h2>Semester 7</h2>
     </div>
 
-    <div class="semester" onclick="window.location.href='semester8.html'">
+    <div class="semester" onclick="window.location.href='semester8'">
         <h2>Semester 8</h2>
     </div>
 
@@ -252,8 +253,8 @@
 
     <footer>
         <p>©2024 CivPrepMaster. All rights reserved. | 
-        <a href="PrivacyPolicy.html">Privacy Policy</a> | 
-        <a href="TermsofService.html">Terms of Service</a></p>
+        <a href="PrivacyPolicy">Privacy Policy</a> | 
+        <a href="TermsofService">Terms of Service</a></p>
     </footer>
 </body>
 </html>
