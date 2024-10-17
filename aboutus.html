@@ -3,32 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - CivPrepMaster</title>
+    <title>Notes by Semester</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
+            background-color: #e8f5e9; /* Light green background */
+            color: #333;
+            text-align: center;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #f4f4f4, #e0e0e0);
         }
+
+        header {
+            background-color: #388E3C; /* Dark green header */
+            padding: 15px 0;
+            color: white;
+        }
+
         .navbar {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            background-color: #28a745;
+            background-color: #2E7D32; /* Darker green navbar */
             padding: 10px 0;
         }
+
         .navbar a {
-            color: #fff;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-            font-size: 18px;
-            transition: background-color 0.3s;
+            color: #fff; /* Link color */
+            padding: 8px 10px; /* Reduced padding for compactness */
+            text-decoration: none; /* Remove underline */
+            font-size: 14px; /* Smaller font size */
+            transition: background-color 0.3s; /* Animation */
         }
+
         .navbar a:hover {
-            background-color: #218838;
+            background-color: #1B5E20; /* Even darker green on hover */
         }
+
         .about-container {
             background: linear-gradient(135deg, #4CAF50, #2E7D32);
             color: #fff;
@@ -40,21 +52,25 @@
             animation: fadeIn 1s ease-in-out;
             max-width: 800px;
         }
+
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
+
         .about-container h1 {
             font-size: 36px;
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
+
         .about-container p {
             font-size: 18px;
             line-height: 1.6;
             margin-bottom: 20px;
             text-align: justify;
         }
+
         .team-photo {
             border-radius: 50%;
             max-width: 300px;
@@ -63,9 +79,11 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s;
         }
+
         .team-photo:hover {
             transform: scale(1.1);
         }
+
         .cta-button {
             background-color: #fff;
             color: #28a745;
@@ -75,10 +93,12 @@
             font-size: 18px;
             transition: background-color 0.3s ease, transform 0.3s ease;
         }
+
         .cta-button:hover {
             background-color: #ddd;
             transform: scale(1.05);
         }
+
         @media (max-width: 768px) {
             .about-container {
                 padding: 30px;
@@ -90,10 +110,12 @@
                 font-size: 16px;
             }
         }
+
         ul {
             list-style-type: none;
             padding: 0;
         }
+
         ul li {
             background-color: #e0f7fa;
             margin: 10px;
@@ -103,42 +125,52 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
         }
+
         ul li:hover {
             transform: translateX(5px);
         }
+
         ul li strong {
             color: #00796b;
         }
+
         ul li span {
             color: #4CAF50;
         }
+
         .social-media {
             background: linear-gradient(135deg, #4CAF50, #2E7D32);
             color: white;
             padding: 50px 20px;
             text-align: center;
         }
+
         .social-media h2 {
             font-size: 36px;
             margin-bottom: 20px;
         }
+
         .social-media p {
             font-size: 18px;
             margin-bottom: 40px;
         }
+
         .social-media .icons {
             display: flex;
             justify-content: center;
             gap: 20px;
         }
+
         .social-media .icons a {
             color: #fff;
             font-size: 36px;
             transition: transform 0.3s;
         }
+
         .social-media .icons a:hover {
             transform: scale(1.2);
         }
+
         footer {
             background-color: #4CAF50;
             color: #fff;
@@ -146,24 +178,27 @@
             padding: 20px;
             margin-top: 20px;
         }
+
         footer a {
             color: #fff;
             text-decoration: none;
             margin: 0 10px;
         }
+
         footer a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
+    
     <div class="navbar">
-        <a href="index.html"><i class="fas fa-home"></i> Home</a>
-        <a href="resources.html"><i class="fas fa-book"></i> Resources</a>
-        <a href="license-preparation.html"><i class="fas fa-certificate"></i> License Prep</a>
-        <a href="psc-preparation.html"><i class="fas fa-graduation-cap"></i> PSC Prep</a>
-        <a href="aboutus.html"><i class="fas fa-info-circle"></i> About Us</a>
-        <a href="contractus.html"><i class="fas fa-envelope"></i> Contact Us</a>
+        <a href="Home"><i class="fas fa-home"></i> Home</a>
+        <a href="resources"><i class="fas fa-book"></i> Resources</a>
+        <a href="license-preparation"><i class="fas fa-certificate"></i> License Prep</a>
+        <a href="psc-preparation"><i class="fas fa-graduation-cap"></i> PSC Prep</a>
+        <a href="aboutus"><i class="fas fa-info-circle"></i> About Us</a>
+        <a href="contactus"><i class="fas fa-envelope"></i> Contact Us</a>
     </div>
 
     <div class="about-container">
@@ -195,10 +230,10 @@
             <p><strong>Facebook ID:</strong> <a href="https://www.facebook.com/profile.php?id=61566247450701" target="_blank">Er. Arun Panthi</a></p>
         </div>
 
-        <img src="https://scontent.fbwa5-1.fna.fbcdn.net/v/t39.30808-6/461088047_3813364378907024_6363138586711233948_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=hVzEAws_B_MQ7kNvgFe7rnz&_nc_ht=scontent.fbwa5-1.fna&_nc_gid=AvGaMnW7Ai5j2EVDNIEyCqt&oh=00_AYCNA8eTlIRp2y2HJmHBX2BvhjRdtFPOCdt4FYw3fM5T6Q&oe=66FE2E1C" alt="Our Team" class="team-photo">
+        <img src="https://p16-sign-sg.tiktokcdn.com/aweme/1080x1080/tos-alisg-avt-0068/6eb9cdf60339ffabdef2012bca9eb0f7.jpeg?lk3s=a5d48078&nonce=1121&refresh_token=3c4035a2c628c0c5b70f77f70bcbb945&x-expires=1729357200&x-signature=nfjQYSk%2F0K6lF4Z7Pwy%2BdiOmrtA%3D&shp=a5d48078&shcp=81f88b70" alt="Our Team" class="team-photo">
        
         <p>Join us on our journey to success and excellence in civil engineering.</p>
-        <a href="contractus.html" class="cta-button">Contact Us</a>
+        <a href="contactus" class="cta-button">Contact Us</a>
     </div>
 
     <div class="social-media">
@@ -207,14 +242,15 @@
         <div class="icons">
             <a href="https://www.facebook.com/arun.panthi27" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://www.tiktok.com/@er.arunpanthi" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/@Arunpanthisblog" target="_blank"><i class="fab fa-youtube"></i></a>
             <a href="mailto:erarunpanthi@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
         </div>
     </div>
 
     <footer>
         <p>©2024 CivPrepMaster. All rights reserved. | 
-        <a href="PrivacyPolicy.html">Privacy Policy</a> | 
-        <a href="TermsofService.html">Terms of Service</a></p>
+        <a href="PrivacyPolicy">Privacy Policy</a> | 
+        <a href="TermsofService">Terms of Service</a></p>
     </footer>
 
 </body>
