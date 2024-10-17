@@ -1,11 +1,16 @@
+---
+layout: default
+title: CivPrepMaster
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CivPrepMaster</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        /* Your CSS styles here */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -183,7 +188,7 @@
 </head>
 <body>
     <div class="navbar">
-        <a href="Home"><i class="fas fa-home"></i> Home</a>
+        <a href="index"><i class="fas fa-home"></i> Home</a>
         <a href="resources"><i class="fas fa-book"></i> Resources</a>
         <a href="license-preparation"><i class="fas fa-certificate"></i> License Prep</a>
         <a href="psc-preparation"><i class="fas fa-graduation-cap"></i> PSC Prep</a>
