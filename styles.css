@@ -108,3 +108,41 @@ footer {
         width: 100%; /* Full-width button on mobile */
     }
 }
+h1, h2, h3 {
+            color: #00796b;
+        }
+
+        ul {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .cta-button, .secondary-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        .cta-button:hover, .secondary-button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+        .secondary-button {
+            background-color: #6c757d;
+        }
+
+        .social-media {
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            margin-top: 2rem;
+            border-radius: 10px;
+        }
