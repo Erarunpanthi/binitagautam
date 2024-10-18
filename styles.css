@@ -8,6 +8,32 @@ body {
     text-align: center;
 }
 
+header {
+    background-color: #388E3C;
+    padding: 15px 0;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #2E7D32;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #1B5E20;
+}
+
 .container {
     max-width: 600px;
     margin: 2rem auto;
