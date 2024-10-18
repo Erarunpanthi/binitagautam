@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CivPrepMaster - Privacy Policy</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        if (window.location.pathname.endsWith('.html')) {
+            const cleanUrl = window.location.pathname.replace('.html', '');
+            window.location.replace(cleanUrl);
+        }
+    </script>
 </head>
 <body>
-    <div class="navbar">
-        <span><i class="fas fa-home"></i> Home</span>
-        <span><i class="fas fa-book"></i> Resources</span>
-        <span><i class="fas fa-certificate"></i> License Prep</span>
-        <span><i class="fas fa-graduation-cap"></i> PSC Prep</span>
-        <span><i class="fas fa-info-circle"></i> About Us</span>
-        <span><i class="fas fa-envelope"></i> Contact Us</span>
+    <div class="navbar" id="navbar">
+        <a href="Home"><i class="fas fa-home"></i> Home</a>
+        <a href="resources"><i class="fas fa-book"></i> Resources</a>
+        <a href="license-preparation"><i class="fas fa-certificate"></i> License Prep</a>
+        <a href="nec-prep"><i class="fas fa-graduation-cap"></i> PSC</a>
+        <a href="aboutus"><i class="fas fa-info-circle"></i> About Us</a>
+        <a href="contactus"><i class="fas fa-envelope"></i> Contact Us</a>
     </div>
 
     <header>
@@ -46,16 +51,28 @@
             <p>We may update this policy from time to time. Any changes will be posted on this page.</p>
         </section>
 
-        <!-- Call-to-Action Buttons -->
         <div style="text-align: center; margin-top: 30px;">
-            <span class="cta-button">Explore More Resources</span>
+            <a href="resources" class="cta-button">Explore More Resources</a>
             <br />
-            <span class="secondary-button">Contact Us for Support</span>
+            <a href="contactus" class="secondary-button">Contact Us for Support</a>
         </div>
     </main>
 
     <footer class="animated-section">
         <p>If you have any questions regarding our policies, please contact us at <a href="mailto:erarunpanthi@gmail.com">erarunpanthi@gmail.com</a>.</p>
+        <p>© 2024 CivPrepMaster. All rights reserved. | 
+        <a href="PrivacyPolicy">Privacy Policy</a> | 
+        <a href="TermsofService">Terms of Service</a></p>
+        
+        <div class="social-media">
+            <h2>Connect with Us</h2>
+            <div class="icons">
+                <a href="https://www.facebook.com/profile.php?id=61566247450701" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.tiktok.com/@er.arunpanthi" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@Arunpanthisblog" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="mailto:erarunpanthi@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
