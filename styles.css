@@ -53,7 +53,7 @@ header {
 
 h1 {
     text-align: center;
-    color: #00796b;
+    color: white; /* Changed from #00796b to white */
     margin-bottom: 1rem;
 }
 
@@ -126,7 +126,7 @@ button:hover {
 
 .section h2 {
     font-size: 36px;
-    color: #2E7D32;
+    color: white; /* Changed from #2E7D32 to white */
     margin-bottom: 15px;
 }
 
