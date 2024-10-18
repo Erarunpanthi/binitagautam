@@ -4,55 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - CivPrepMaster</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #e2f4e6, #f4f4f4);
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        .navbar {
-            display: flex;
-            justify-content: center;
-            background-color: #2E7D32;
-            padding: 15px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 5px;
-            border-radius: 5px;
-            transition: background 0.3s, transform 0.2s;
-        }
-        .navbar a:hover {
-            background-color: #1B5E20;
-            transform: scale(1.05);
-        }
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 2rem;
-            background: #fff;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        h1 {
-            text-align: center;
-            color: #2E7D32;
-            margin-bottom: 1.5rem;
-        }
         .form-group {
             margin-bottom: 1.5rem;
         }
+
         label {
             display: block;
             margin-bottom: 0.5rem;
             color: #2E7D32;
         }
+
         input, select, textarea {
             width: 100%;
             padding: 10px;
@@ -60,10 +24,12 @@
             border-radius: 5px;
             transition: border-color 0.3s;
         }
+
         input:focus, select:focus, textarea:focus {
             border-color: #2E7D32;
             outline: none;
         }
+
         button {
             width: 100%;
             padding: 12px;
@@ -75,48 +41,9 @@
             cursor: pointer;
             transition: background 0.3s;
         }
+
         button:hover {
             background: #1B5E20;
-        }
-        .social-media {
-            background: linear-gradient(135deg, #4CAF50, #2E7D32);
-            color: white;
-            padding: 50px 20px;
-            text-align: center;
-            margin-top: 2rem;
-            border-radius: 10px;
-        }
-        .social-media h2 {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-        .social-media .icons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .social-media .icons a {
-            color: #fff;
-            font-size: 24px;
-            transition: transform 0.3s;
-        }
-        .social-media .icons a:hover {
-            transform: scale(1.2);
-        }
-        footer {
-            background-color: #2E7D32;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
-        footer a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        footer a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
@@ -236,11 +163,9 @@
                     <option value="Panchthar">Panchthar</option>
                     <option value="Parbat">Parbat</option>
                     <option value="Patan">Patan</option>
-                    <option value="Parsa">Parsa</option>
+                    <option value="Pokhara">Pokhara</option>
                     <option value="Ramechhap">Ramechhap</option>
-                    <option value="Rautahat">Rautahat</option>
-                    <option value="Rolpa">Rolpa</option>
-                    <option value="Rukum">Rukum</option>
+                    <option value="Rasuwa">Rasuwa</option>
                     <option value="Salyan">Salyan</option>
                     <option value="Sindhuli">Sindhuli</option>
                     <option value="Sindhupalchok">Sindhupalchok</option>
@@ -248,8 +173,8 @@
                     <option value="Syangja">Syangja</option>
                     <option value="Tanahun">Tanahun</option>
                     <option value="Taplejung">Taplejung</option>
-                    <option value="Terhathum">Terhathum</option>
                     <option value="Udayapur">Udayapur</option>
+                    <option value="Terhathum">Terhathum</option>
                 </select>
             </div>
             <div class="form-group">
@@ -286,4 +211,9 @@
             const university = document.getElementById('university').value;
             const semester = document.getElementById('semester').value;
             const district = document.getElementById('district').value;
-            const message = document.getElementById('message').value
+            const message = document.getElementById('message').value;
+            // Further processing can be added here (e.g., sending data to a server)
+        });
+    </script>
+</body>
+</html>
