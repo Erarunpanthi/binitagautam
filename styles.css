@@ -1,8 +1,18 @@
-/* Universal Styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* Button Styles */
+.cta-button {
+    background-color: #fff;
+    color: #28a745;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px; /* 25px radius for rounded buttons */
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 10px; /* Added margin for spacing between buttons */
+}
+
+.cta-button:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
 }
 
 /* Body Styles */
@@ -10,172 +20,31 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #e8f5e9; /* Light green background */
     color: #333;
-    text-align: center;
-}
-
-/* Header Styles */
-header.hero {
-    background: linear-gradient(135deg, #4CAF50, #2E7D32);
-    color: white;
-    padding: 60px 20px;
-    border-radius: 0 0 25px 25px;
-    margin-bottom: 20px;
-}
-
-header.hero h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-header.hero p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-/* Navbar Styles */
-.navbar {
-    display: flex;
-    justify-content: center;
-    background-color: #2E7D32; /* Darker green navbar */
-    padding: 10px 0;
-}
-
-.navbar a {
-    color: #fff; /* Link color */
-    padding: 10px 15px; /* Padding */
-    text-decoration: none; /* Remove underline */
-    font-size: 16px; /* Font size */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s, transform 0.3s; /* Animation */
-    margin: 0 10px;
-}
-
-.navbar a:hover {
-    background-color: #1B5E20; /* Darker green on hover */
-    transform: translateY(-3px); /* Lift effect on hover */
+    text-align: center; /* Center text alignment */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Increased line height for better readability */
 }
 
 /* Section Styles */
 .section {
-    background: white;
-    padding: 30px 20px;
-    margin: 20px auto;
+    margin: 20px auto; /* Center sections */
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    max-width: 800px; /* Max width for sections */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Background for sections */
+    width: 96%; /* Make the section 96% of screen width */
+    max-width: 800px; /* Optional max-width for consistency */
 }
 
 .section h2 {
     font-size: 28px;
-    margin-bottom: 15px;
-    color: #388E3C;
+    margin-bottom: 10px; /* Space below headings */
+    color: #388E3C; /* Dark green color for headings */
 }
 
 .section p {
-    font-size: 16px;
-    margin-bottom: 20px;
-    line-height: 1.6; /* Improved line height */
-}
-
-.cta-button {
-    background-color: #388E3C;
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 25px; /* Increased radius */
-    font-size: 18px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #2E7D32; /* Darker green on hover */
-    transform: scale(1.05);
-}
-
-/* Social Media Styles */
-.social-media {
-    background: linear-gradient(135deg, #4CAF50, #2E7D32);
-    color: white;
-    padding: 30px 10px; /* Reduced padding for compactness */
-    border-radius: 25px; /* 25px border radius */
-    margin: 20px auto; /* Center the section */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
-    max-width: 800px; /* Set a max-width for consistency */
-}
-
-.social-media h2 {
-    font-size: 28px; /* Slightly smaller font size */
-    margin-bottom: 10px; /* Reduced margin */
-}
-
-.social-media p {
-    font-size: 16px; /* Adjusted font size */
-    margin-bottom: 20px; /* Reduced margin */
-}
-
-.social-media .icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px; /* Reduced gap between icons */
-}
-
-.social-media .icons a {
-    color: #fff;
-    font-size: 30px; /* Slightly smaller icons */
-    transition: transform 0.3s;
-}
-
-.social-media .icons a:hover {
-    transform: scale(1.2);
-}
-
-/* Footer Styles */
-footer {
-    background-color: #4CAF50;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    header.hero h1 {
-        font-size: 28px; /* Adjust font size for smaller screens */
-    }
-
-    header.hero p {
-        font-size: 18px; /* Adjust font size for smaller screens */
-    }
-
-    .navbar a {
-        padding: 8px 12px; /* Adjust padding for smaller screens */
-    }
-
-    .section h2 {
-        font-size: 24px; /* Adjust heading size */
-    }
-
-    .cta-button {
-        font-size: 16px; /* Adjust button size */
-    }
-
-    .social-media h2 {
-        font-size: 24px; /* Adjust heading size */
-    }
-
-    .social-media p {
-        font-size: 14px; /* Adjust font size */
-    }
+    font-size: 16px; /* Adjusted font size for body text */
+    margin-bottom: 20px; /* Space below paragraphs */
+    text-align: center; /* Center text in sections */
 }
