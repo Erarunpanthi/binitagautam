@@ -31,62 +31,15 @@ header {
 
 .navbar a {
     color: #fff;
-    padding: 8px 10px;
+    padding: 12px 20px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     transition: background-color 0.3s;
+    border-radius: 5px; 
 }
 
 .navbar a:hover {
     background-color: #1B5E20;
-}
-
-/* Main Content Styles */
-main {
-    padding: 20px;
-}
-
-section {
-    margin: 20px auto;
-    max-width: 96%; /* Updated to 96% */
-    background: white;
-    padding: 20px;
-    border-radius: 15px; 
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-h2 {
-    color: #2E7D32;
-}
-
-/* Button Styles */
-.cta-button, .secondary-button {
-    padding: 15px 30px;
-    border-radius: 25px;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 20px auto;
-    display: inline-flex; /* Changed to inline-flex for centering */
-    justify-content: center; /* Center text horizontally */
-    align-items: center; /* Center text vertically */
-    text-decoration: none; /* Remove underline */
-}
-
-.cta-button {
-    background: linear-gradient(45deg, #28a745, #218838);
-    color: white;
-}
-
-.cta-button:hover {
-    background: linear-gradient(45deg, #45a049, #1e7e34);
-}
-
-.secondary-button {
-    background-color: #f0ad4e;
-    color: white;
-}
-
-.secondary-button:hover {
-    background-color: #ec971f;
 }
 
 /* Hero Section Styles */
@@ -109,14 +62,18 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
 /* Section Styles */
 .section {
     background-color: #fff;
     color: #333;
-    padding: 20px;
-    text-align: center;
-    margin: 15px auto;
-    border-radius: 15px; 
+    padding: 40px 20px;
+    margin: 20px auto;
+    border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
     max-width: 96%; /* Updated to 96% */
@@ -127,15 +84,80 @@ h2 {
 }
 
 .section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 28px;
+    margin-bottom: 15px;
     color: #2E7D32;
 }
 
 .section p {
     font-size: 16px;
-    line-height: 1.8;
+    line-height: 1.6;
     text-align: justify;
+}
+
+/* Button Styles */
+.cta-button, .secondary-button {
+    padding: 15px 30px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px auto;
+    display: inline-flex; /* Centering */
+    justify-content: center; 
+    align-items: center; 
+    text-decoration: none; 
+}
+
+.cta-button {
+    background: linear-gradient(45deg, #28a745, #218838);
+    color: white;
+}
+
+.cta-button:hover {
+    background: linear-gradient(45deg, #45a049, #1e7e34);
+}
+
+.secondary-button {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.secondary-button:hover {
+    background-color: #ec971f;
+}
+
+/* Social Media Styles */
+.social-media {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    border-top: 5px solid #2E7D32;
+}
+
+.social-media h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.social-media p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.social-media .icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media .icons a {
+    color: #fff;
+    font-size: 36px;
+    transition: transform 0.3s;
+}
+
+.social-media .icons a:hover {
+    transform: scale(1.2);
 }
 
 /* Footer Styles */
@@ -172,7 +194,7 @@ footer a:hover {
         font-size: 24px;
     }
 
-    .hero .cta-button {
+    .cta-button {
         padding: 20px 40px;
     }
 
@@ -181,7 +203,7 @@ footer a:hover {
     }
 
     .section p {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
