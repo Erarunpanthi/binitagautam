@@ -336,3 +336,18 @@ ul li span {
         align-items: center;
     }
 }
+ footer {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 10px; /* Adjusted padding */
+            margin-top: 20px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 5px; /* Adjusted margin */
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
