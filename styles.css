@@ -310,3 +310,37 @@ footer a {
 footer a:hover {
     color: #ddd;               /* Lighter color on hover */
 }
+.cta-button {
+    background: linear-gradient(45deg, #28a745, #218838);
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    background: linear-gradient(45deg, #45a049, #1e7e34);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.secondary-button {
+    background-color: #f0ad4e;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.secondary-button:hover {
+    background-color: #ec971f;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
