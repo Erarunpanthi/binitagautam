@@ -146,8 +146,5 @@ footer a:hover {
     .social-media {
         padding: 20px; /* Further reduce padding */
     }
-    .navbar {
-        flex-wrap: nowrap; /* Ensure no wrapping */
-        overflow-x: auto; /* Enable horizontal scrolling */
-    }
-}
+    
+
