@@ -323,3 +323,9 @@ footer a {
 footer a:hover {
     color: #ddd;
 }
+.cta-button, .secondary-button {
+    padding: 15px 25px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 30px 0; /* Adjust this value as needed */
+}
