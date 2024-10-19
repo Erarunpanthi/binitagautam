@@ -8,7 +8,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #e8f5e9; /* Light green background */
     color: #333;
-    text-align: center;
+    text-align: center; /* Center text in body */
     margin: 0;
     padding: 0;
 }
@@ -31,14 +31,17 @@ header {
 
 .navbar a {
     color: #fff; /* Link color */
-    padding: 8px 10px; /* Reduced padding for compactness */
+    padding: 12px 15px; /* Increased padding for larger buttons */
     text-decoration: none; /* Remove underline */
-    font-size: 14px; /* Smaller font size */
-    transition: background-color 0.3s; /* Animation */
+    font-size: 16px; /* Slightly larger font size */
+    margin: 0 10px; /* Spacing between links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Animation */
 }
 
 .navbar a:hover {
     background-color: #1B5E20; /* Even darker green on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
 }
 
 /* About Container Styles */
@@ -69,7 +72,7 @@ header {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
-    text-align: justify;
+    text-align: justify; /* Justify text within the container */
 }
 
 /* Button Styles */
@@ -78,9 +81,10 @@ header {
     color: #28a745;
     padding: 12px 25px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px; /* Increased radius to 25px */
     font-size: 18px;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .cta-button:hover {
@@ -101,11 +105,12 @@ ul li {
     border-radius: 5px;
     text-align: justify;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 ul li:hover {
-    transform: translateX(5px);
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 ul li strong {
@@ -120,29 +125,33 @@ ul li span {
 .social-media {
     background: linear-gradient(135deg, #4CAF50, #2E7D32);
     color: white;
-    padding: 50px 20px;
+    padding: 30px 10px; /* Reduced padding for compactness */
     text-align: center;
+    border-radius: 25px; /* 25px border radius */
+    margin: 20px auto; /* Center the section */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    max-width: 800px; /* Set a max-width for consistency */
 }
 
 .social-media h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 28px; /* Slightly smaller font size */
+    margin-bottom: 10px; /* Reduced margin */
 }
 
 .social-media p {
-    font-size: 18px;
-    margin-bottom: 40px;
+    font-size: 16px; /* Adjusted font size */
+    margin-bottom: 20px; /* Reduced margin */
 }
 
 .social-media .icons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px; /* Reduced gap between icons */
 }
 
 .social-media .icons a {
     color: #fff;
-    font-size: 36px;
+    font-size: 30px; /* Slightly smaller icons */
     transition: transform 0.3s;
 }
 
@@ -174,12 +183,14 @@ footer a:hover {
     .about-container {
         padding: 30px;
     }
-    
     .about-container h1 {
         font-size: 28px;
     }
-
     .about-container p {
         font-size: 16px;
+    }
+    .navbar a {
+        padding: 10px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Adjust font size */
     }
 }
