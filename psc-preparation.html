@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             background: linear-gradient(to right, #f4f4f4, #e0e0e0);
+            overflow-x: hidden; /* Prevent horizontal scroll */
         }
         .navbar {
             display: flex;
@@ -19,10 +20,10 @@
         }
         .navbar a {
             color: #fff;
-            padding: 14px 20px;
+            padding: 14px 10px; /* Adjusted padding */
             text-decoration: none;
             text-align: center;
-            font-size: 18px;
+            font-size: 16px; /* Slightly smaller font size for better fit */
             transition: background-color 0.3s;
         }
         .navbar a:hover {
@@ -31,47 +32,46 @@
         .hero {
             background: linear-gradient(135deg, #4CAF50, #2E7D32);
             color: #fff;
-            padding: 100px 20px;
+            padding: 50px 10px; /* Adjusted padding */
             text-align: center;
-            border-bottom: 5px solid #2E7D32;
         }
         .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
+            font-size: 28px; /* Adjusted font size */
+            margin-bottom: 10px;
         }
         .hero p {
-            font-size: 24px;
-            margin-bottom: 40px;
+            font-size: 18px; /* Adjusted font size */
+            margin-bottom: 20px;
         }
         .section {
             background-color: #fff;
             color: #333;
-            padding: 50px 20px;
+            padding: 20px 10px; /* Adjusted padding */
             text-align: center;
-            margin: 20px auto;
+            margin: 10px 0; /* Adjusted margin */
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 800px; /* Added max width for better layout */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 100%; /* Allow sections to fit the screen */
         }
         .section h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
+            font-size: 24px; /* Adjusted font size */
+            margin-bottom: 10px;
         }
         .section p {
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 20px;
+            font-size: 16px; /* Adjusted font size */
+            line-height: 1.4;
+            margin-bottom: 10px;
         }
         .cta-button {
             display: inline-block;
-            padding: 15px 30px;
-            margin-top: 20px;
+            padding: 10px 20px; /* Adjusted padding */
+            margin-top: 10px;
             background-color: #28a745;
             color: white;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s ease, transform 0.3s ease;
-            font-size: 20px;
+            font-size: 16px; /* Adjusted font size */
         }
         .cta-button:hover {
             background-color: #218838;
@@ -82,34 +82,32 @@
             flex-direction: column;
             align-items: center;
             gap: 20px;
-            padding: 50px;
-            margin-top: 40px;
+            padding: 30px 10px; /* Adjusted padding */
+            margin-top: 20px;
             background: #4CAF50;
             color: #fff;
             text-align: center;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .social-media h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
+            font-size: 24px; /* Adjusted font size */
+            margin-bottom: 10px;
         }
         .social-media p {
-            font-size: 18px;
-            margin-bottom: 40px;
+            font-size: 16px; /* Adjusted font size */
+            margin-bottom: 20px;
         }
         .social-media .icons {
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 20px; /* Adjusted gap */
         }
         .social-media .icons a {
             color: #fff;
-            font-size: 48px;
+            font-size: 36px; /* Adjusted font size */
             transition: transform 0.3s ease-in-out;
             padding: 10px;
-            border-radius: 50%;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .social-media .icons a:hover {
             transform: scale(1.2);
@@ -119,63 +117,39 @@
             background-color: #4CAF50;
             color: #fff;
             text-align: center;
-            padding: 20px;
+            padding: 10px; /* Adjusted padding */
             margin-top: 20px;
         }
         footer a {
             color: #fff;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 5px; /* Adjusted margin */
         }
         footer a:hover {
             text-decoration: underline;
         }
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 36px;
-            }
-            .hero p {
-                font-size: 20px;
-            }
-            .section {
-                padding: 30px 10px;
-            }
-            .section h2 {
-                font-size: 28px;
-            }
-            .section p {
-                font-size: 16px;
-            }
-            .cta-button {
-                font-size: 18px;
-                padding: 12px 24px;
-            }
-        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-     <script>
-            function toggleNavbar() {
-            const navbar = document.getElementById('navbar');
-            navbar.classList.toggle('active');
-        }
-    </script>
 </head>
 <body>
     <div class="navbar">
-        <a href="Home.html"><i class="fas fa-home"></i> Home</a>
-        <a href="resources.html"><i class="fas fa-book"></i> Resources</a>
+        <a href="Home"><i class="fas fa-home"></i> Home</a>
+        <a href="resources"><i class="fas fa-book"></i> Resources</a>
         <a href="#license-prep"><i class="fas fa-certificate"></i> License Prep</a>
         <a href="psc-prep"><i class="fas fa-graduation-cap"></i> PSC Prep</a>
-        <a href="aboutus.html"><i class="fas fa-info-circle"></i> About Us</a>
-        <a href="contactus.html"><i class="fas fa-envelope"></i> Contact Us</a>
+        <a href="aboutus"><i class="fas fa-info-circle"></i> About Us</a>
+        <a href="contactus"><i class="fas fa-envelope"></i> Contact Us</a>
     </div>
 
-  
+    <div class="hero">
+        <h1>Welcome to CivPrepMaster</h1>
+        <p>Your go-to resource for PSC preparation.</p>
+    </div>
 
     <div class="section" id="psc-syllabus">
         <h2><i class="fas fa-book-open icon"></i> PSC Syllabus</h2>
         <p>Get the latest PSC syllabus to prepare effectively.</p>
-        <a href="psc-syllabus.html" class="cta-button">View PSC Syllabus</a>
+        <a href="psc-syllabus" class="cta-button">View PSC Syllabus</a>
     </div>
 
     <div class="section" id="note-solutions">
@@ -187,25 +161,25 @@
     <div class="section" id="recommended-books">
         <h2><i class="fas fa-book icon"></i> Recommended Books</h2>
         <p>Explore our extensive collection of recommended textbooks and reference books.</p>
-        <a href="recommended-books.html" class="cta-button">View Recommended Books</a>
+        <a href="recommended-books" class="cta-button">View Recommended Books</a>
     </div>
 
     <div class="section" id="notices">
         <h2><i class="fas fa-bell icon"></i> Notices</h2>
         <p>Stay updated with the latest notices and announcements.</p>
-        <a href="notices.html" class="cta-button">View Notices</a>
+        <a href="notices" class="cta-button">View Notices</a>
     </div>
 
     <div class="section" id="exam-section">
         <h2><i class="fas fa-pencil-alt icon"></i> Exam Section</h2>
         <p>Prepare for your exams with our comprehensive study materials.</p>
-        <a href="exam-preparation.html" class="cta-button">Start Exam Preparation</a>
+        <a href="exam-preparation" class="cta-button">Start Exam Preparation</a>
     </div>
 
     <div class="section" id="past-questions">
         <h2><i class="fas fa-question-circle icon"></i> Past Questions</h2>
         <p>Explore past exam questions to help you prepare effectively.</p>
-        <a href="past-questions.html" class="cta-button">View Past Questions</a>
+        <a href="past-questions" class="cta-button">View Past Questions</a>
     </div>
 
     <div class="social-media">
@@ -214,6 +188,7 @@
         <div class="icons">
             <a href="https://www.facebook.com/profile.php?id=61566247450701" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://www.tiktok.com/@er.arunpanthi" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/@Arunpanthisblog" target="_blank"><i class="fab fa-youtube"></i></a>
             <a href="mailto:erarunpanthi@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
         </div>
     </div>
@@ -221,6 +196,5 @@
     <footer>
         <p>© 2024 CivPrepMaster. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
     </footer>
-
 </body>
 </html>
