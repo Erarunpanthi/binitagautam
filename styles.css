@@ -38,6 +38,48 @@ header {
     background-color: #1B5E20;
 }
 
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2E7D32;
+}
+
+.cta-button, .secondary-button {
+    padding: 15px 25px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 15px 0; 
+}
+
+.cta-button {
+    background: linear-gradient(45deg, #28a745, #218838);
+    color: white;
+}
+
+.cta-button:hover {
+    background: linear-gradient(45deg, #45a049, #1e7e34);
+}
+
+.secondary-button {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.secondary-button:hover {
+    background-color: #ec971f;
+}
+
 .hero {
     background: linear-gradient(135deg, #4CAF50, #2E7D32);
     color: #fff;
@@ -61,17 +103,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.hero .cta-button {
-    background-color: #fff;
-    color: #4CAF50;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-    margin: 10px;
-    transition: background-color 0.3s, transform 0.3s;
 }
 
 .about-container {
@@ -143,23 +174,6 @@ header {
     line-height: 1.6;
 }
 
-.section .cta-button {
-    display: inline-block;
-    padding: 15px 25px;
-    margin-top: 15px;
-    background-color: #28a745;
-    color: white;
-    text-decoration: none;
-    border-radius: 20px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    font-size: 18px;
-}
-
-.section .cta-button:hover {
-    background-color: #45a049;
-    transform: scale(1.05);
-}
-
 .testimonials {
     background-color: #f9f9f9;
     padding: 30px 20px;
@@ -210,8 +224,6 @@ header {
 .social-media .icons a:hover {
     transform: scale(1.2);
 }
-
-
 
 ul {
     list-style-type: none;
@@ -292,167 +304,12 @@ ul li span {
         align-items: center;
     }
 }
-footer {
-    background-color: #4CAF50; /* Dark green background */
-    color: #fff;               /* White text color */
-    text-align: center;        /* Centered text */
-    padding: 20px;            /* Padding around the text */
-    margin-top: 20px;         /* Space above the footer */
-}
-
-footer a {
-    color: #fff;               /* White links */
-    text-decoration: none;      /* No underline on links */
-    margin: 0 10px;           /* Margin between links */
-    transition: color 0.3s;    /* Smooth color transition */
-}
-
-footer a:hover {
-    color: #ddd;               /* Lighter color on hover */
-}
-.cta-button {
-    background: linear-gradient(45deg, #28a745, #218838);
-    color: white;
-    padding: 15px 25px;
-    text-decoration: none;
-    border-radius: 20px;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 10px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.cta-button:hover {
-    background: linear-gradient(45deg, #45a049, #1e7e34);
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-}
-
-.secondary-button {
-    background-color: #f0ad4e;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 20px;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 10px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.secondary-button:hover {
-    background-color: #ec971f;
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-}
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #f4f4f4, #e0e0e0);
-    color: #333;
-    scroll-behavior: smooth;
-    text-align: center;
-}
-
-header {
-    background-color: #388E3C;
-    padding: 15px 0;
-    color: white;
-}
-
-.navbar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #2E7D32;
-    padding: 10px 0;
-}
-
-.navbar a {
-    color: #fff;
-    padding: 8px 10px;
-    text-decoration: none;
-    font-size: 14px;
-    transition: background-color 0.3s;
-}
-
-.navbar a:hover {
-    background-color: #1B5E20;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    margin: 20px auto;
-    max-width: 800px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #2E7D32;
-}
-
-.cta-button {
-    background-color: #28a745;
-    color: white;
-    padding: 15px 25px;
-    text-decoration: none;
-    border-radius: 20px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin: 10px 0;
-}
-
-.cta-button:hover {
-    background-color: #45a049;
-    transform: scale(1.05);
-}
-
-.social-media {
-    background: linear-gradient(135deg, #4CAF50, #2E7D32);
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.social-media h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.social-media p {
-    font-size: 18px;
-    margin-bottom: 40px;
-}
-
-.social-media .icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.social-media .icons a {
-    color: #fff;
-    font-size: 36px;
-    transition: transform 0.3s;
-}
-
-.social-media .icons a:hover {
-    transform: scale(1.2);
-}
 
 footer {
     background-color: #4CAF50;
     color: #fff;
     text-align: center;
-    padding: 20px 10px;
+    padding: 20px;
     margin-top: 20px;
 }
 
@@ -466,39 +323,3 @@ footer a {
 footer a:hover {
     color: #ddd;
 }
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    background-color: #e0f7fa;
-    margin: 10px;
-    padding: 15px;
-    border-radius: 5px;
-    text-align: justify;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-ul li:hover {
-    transform: translateX(5px);
-}
-
-@media (min-width: 768px) {
-    .navbar a {
-        padding: 14px 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-.cta-button, .secondary-button {
-    margin: 15px 0; /* Adjust this value as needed */
-}
-
