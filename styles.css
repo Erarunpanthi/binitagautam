@@ -9,7 +9,7 @@ body {
     background: linear-gradient(to right, #f4f4f4, #e0e0e0);
     color: #333;
     scroll-behavior: smooth;
-    text-align: center; /* Centering text for the body */
+    text-align: center;
 }
 
 header {
@@ -27,15 +27,15 @@ header {
 }
 
 .navbar a {
-    color: #fff; /* Link color */
-    padding: 8px 10px; /* Reduced padding for compactness */
-    text-decoration: none; /* Remove underline */
-    font-size: 14px; /* Smaller font size */
-    transition: background-color 0.3s; /* Animation */
+    color: #fff;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
 }
 
 .navbar a:hover {
-    background-color: #1B5E20; /* Even darker green on hover */
+    background-color: #1B5E20;
 }
 
 .hero {
@@ -72,11 +72,6 @@ header {
     font-size: 18px;
     margin: 10px;
     transition: background-color 0.3s, transform 0.3s;
-}
-
-.hero .cta-button.secondary {
-    background-color: #f8f9fa;
-    color: #28a745;
 }
 
 .about-container {
@@ -120,21 +115,6 @@ header {
 
 .team-photo:hover {
     transform: scale(1.1);
-}
-
-.cta-button {
-    background-color: #fff;
-    color: #28a745;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #ddd;
-    transform: scale(1.05);
 }
 
 .section {
@@ -235,8 +215,7 @@ header {
     background-color: #4CAF50;
     color: #fff;
     text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 20px 10px;
 }
 
 .footer-content {
@@ -304,6 +283,7 @@ ul li span {
     color: #4CAF50;
 }
 
+/* Media Queries */
 @media (min-width: 768px) {
     .navbar a {
         padding: 14px 20px;
