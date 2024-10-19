@@ -1,3 +1,4 @@
+/* Universal Styles */
 * {
     box-sizing: border-box;
 }
@@ -12,12 +13,14 @@ body {
     text-align: center;
 }
 
+/* Header Styles */
 header {
     background-color: #388E3C;
     padding: 15px 0;
     color: white;
 }
 
+/* Navbar Styles */
 .navbar {
     display: flex;
     flex-wrap: wrap;
@@ -38,6 +41,7 @@ header {
     background-color: #1B5E20;
 }
 
+/* Main Content Styles */
 main {
     padding: 20px;
 }
@@ -55,14 +59,16 @@ h2 {
     color: #2E7D32;
 }
 
+/* Button Styles */
 .cta-button, .secondary-button {
     padding: 15px 30px;
     border-radius: 25px;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     margin: 20px auto;
-    display: inline-block;
+    display: inline-flex; /* Changed to inline-flex for centering */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
     text-decoration: none; /* Remove underline */
-    text-align: center; /* Center text */
 }
 
 .cta-button {
@@ -83,6 +89,7 @@ h2 {
     background-color: #ec971f;
 }
 
+/* Hero Section Styles */
 .hero {
     background: linear-gradient(135deg, #4CAF50, #2E7D32);
     color: #fff;
@@ -102,55 +109,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-.hero .hero-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.about-container {
-    background: linear-gradient(135deg, #4CAF50, #2E7D32);
-    color: #fff;
-    padding: 50px 20px;
-    text-align: center;
-    margin: 20px auto;
-    border-radius: 15px; 
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 1s ease-in-out;
-    max-width: 96%; /* Updated to 96% */
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-.about-container h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.about-container p {
-    font-size: 20px;
-    line-height: 1.8;
-    margin-bottom: 25px;
-    text-align: justify;
-}
-
-.team-photo {
-    border-radius: 50%;
-    max-width: 300px;
-    height: auto;
-    margin-top: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-}
-
-.team-photo:hover {
-    transform: scale(1.1);
-}
-
+/* Section Styles */
 .section {
     background-color: #fff;
     color: #333;
@@ -179,87 +138,27 @@ h2 {
     text-align: justify;
 }
 
-.testimonials {
-    background-color: #f9f9f9;
-    padding: 30px 20px;
-}
-
-.testimonial {
-    display: flex;
-    align-items: center;
-    margin: 15px 0;
-}
-
-.user-photo {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    margin-right: 15px;
-}
-
-.social-media {
-    background: linear-gradient(135deg, #4CAF50, #2E7D32);
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.social-media h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: white;
-}
-
-.social-media p {
-    font-size: 20px;
-    margin-bottom: 40px;
-    color: white;
-    text-align: justify;
-}
-
-.social-media .icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.social-media .icons a {
+/* Footer Styles */
+footer {
+    background-color: #4CAF50;
     color: #fff;
-    font-size: 36px;
-    transition: transform 0.3s;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 }
 
-.social-media .icons a:hover {
-    transform: scale(1.2);
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+footer a:hover {
+    color: #ddd;
 }
 
-ul li {
-    background-color: #e0f7fa;
-    margin: 10px;
-    padding: 15px;
-    border-radius: 5px;
-    text-align: justify;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-ul li:hover {
-    transform: translateX(5px);
-}
-
-ul li strong {
-    color: #00796b;
-}
-
-ul li span {
-    color: #4CAF50;
-}
-
+/* Media Queries */
 @media (min-width: 768px) {
     .navbar a {
         padding: 14px 20px;
@@ -284,14 +183,6 @@ ul li span {
     .section p {
         font-size: 16px;
     }
-
-    .social-media h2 {
-        font-size: 36px;
-    }
-
-    .social-media p {
-        font-size: 18px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -311,23 +202,4 @@ ul li span {
         flex-direction: column;
         align-items: center;
     }
-}
-
-footer {
-    background-color: #4CAF50;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s;
-}
-
-footer a:hover {
-    color: #ddd;
 }
