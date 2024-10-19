@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #388E3C; /* Dark green header */
+    background-color: #388E3C;
     padding: 15px 0;
     color: white;
 }
@@ -22,7 +22,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #2E7D32; /* Darker green navbar */
+    background-color: #2E7D32;
     padding: 10px 0;
 }
 
@@ -215,7 +215,7 @@ header {
     background-color: #4CAF50;
     color: #fff;
     text-align: center;
-    padding: 20px 10px; /* Unified padding */
+    padding: 20px 10px;
     margin-top: 20px;
 }
 
@@ -284,7 +284,6 @@ ul li span {
     color: #4CAF50;
 }
 
-/* Media Queries */
 @media (min-width: 768px) {
     .navbar a {
         padding: 14px 20px;
