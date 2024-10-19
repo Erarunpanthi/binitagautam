@@ -44,11 +44,11 @@ main {
 
 section {
     margin: 20px auto;
-    max-width: 94%;
+    max-width: 96%; /* Updated to 96% */
     background: white;
     padding: 20px;
-    border-radius: 15px; /* Adjusted radius for a softer look */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Increased shadow for depth */
+    border-radius: 15px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
@@ -59,8 +59,10 @@ h2 {
     padding: 15px 30px;
     border-radius: 25px;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 20px auto; /* Center the buttons */
-    display: inline-block; /* Ensure buttons align correctly */
+    margin: 20px auto;
+    display: inline-block;
+    text-decoration: none; /* Remove underline */
+    text-align: center; /* Center text */
 }
 
 .cta-button {
@@ -112,10 +114,10 @@ h2 {
     padding: 50px 20px;
     text-align: center;
     margin: 20px auto;
-    border-radius: 15px; /* Adjusted radius for a softer look */
+    border-radius: 15px; 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     animation: fadeIn 1s ease-in-out;
-    max-width: 94%;
+    max-width: 96%; /* Updated to 96% */
 }
 
 @keyframes fadeIn {
@@ -155,9 +157,10 @@ h2 {
     padding: 20px;
     text-align: center;
     margin: 15px auto;
-    border-radius: 15px; /* Adjusted radius for a softer look */
+    border-radius: 15px; 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
+    max-width: 96%; /* Updated to 96% */
 }
 
 .section:hover {
