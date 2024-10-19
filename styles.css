@@ -316,13 +316,12 @@ ul li span {
     .social-media p {
         font-size: 18px;
     }
-}
 
 @media (max-width: 768px) {
     .about-container {
         padding: 30px;
     }
-
+    }
     .about-container h1 {
         font-size: 28px;
     }
@@ -335,4 +334,3 @@ ul li span {
         flex-direction: column;
         align-items: center;
     }
-}
