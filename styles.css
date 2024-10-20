@@ -41,25 +41,27 @@ h1, h2 {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Form Styles */
-.question-card {
-    background: #f7f9fc;
-    margin: 15px 0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid #d1d8e0;
+h1 {
+    text-align: center;
 }
 
+/* Form Styles */
 .form-group {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    justify-content: space-between; /* Space between label and radio button */
     margin-bottom: 1.5rem;
 }
 
 label {
-    display: block;
     margin-bottom: 0.5rem;
     color: #2E7D32;
     font-weight: bold;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center; /* Centers the radio button vertically */
 }
 
 input, select, textarea {
@@ -76,8 +78,7 @@ input:focus, select:focus, textarea:focus {
     outline: none;
 }
 
-/* Button Styles */
-button, .submit, .view-answers {
+button {
     width: 100%;
     padding: 12px;
     background: #2E7D32;
@@ -87,10 +88,9 @@ button, .submit, .view-answers {
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s;
-    margin-top: 20px;
 }
 
-button:hover, .submit:hover, .view-answers:hover {
+button:hover {
     background: #1B5E20;
 }
 
@@ -107,7 +107,7 @@ input::placeholder, textarea::placeholder {
 .hero {
     background-color: #4CAF50; /* Green background for hero section */
     color: white; /* White text for hero section */
-    padding: 20px; /* Reduced padding */
+    padding: 20px 20px; /* Reduced padding */
     text-align: center;
     border-radius: 10px; /* Rounded corners */
     margin: 30px auto; /* Increased margin */
@@ -170,38 +170,6 @@ input::placeholder, textarea::placeholder {
     width: 90%; /* Width for sections */
     max-width: 800px; /* Max width for sections */
     text-align: center; /* Center text */
-}
-
-/* Timer and Results */
-.timer {
-    text-align: center;
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    color: #e74c3c;
-}
-
-.results, .answers {
-    display: none;
-    text-align: center;
-    font-size: 1.5em;
-    margin-top: 20px;
-    color: #34495e;
-}
-
-.answers ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
-    margin: 0 auto;
-    max-width: 600px;
-}
-
-.answers li {
-    background: #f7f9fc;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 /* Social Media Styles */
