@@ -12,6 +12,7 @@ h1, h2 {
     color: #388E3C; /* Dark green headings */
 }
 
+/* Navbar Styles */
 .navbar {
     display: flex;
     flex-wrap: wrap;
@@ -32,6 +33,7 @@ h1, h2 {
     background-color: #1B5E20; /* Even darker green on hover */
 }
 
+/* Container Styles */
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -41,27 +43,17 @@ h1, h2 {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    text-align: center;
-}
-
 /* Form Styles */
 .form-group {
-    display: flex;
-    align-items: center; /* Aligns items vertically */
-    justify-content: space-between; /* Space between label and radio button */
     margin-bottom: 1.5rem;
 }
 
 label {
+    display: flex; /* Change to flex to align items */
+    align-items: center; /* Center items vertically */
     margin-bottom: 0.5rem;
     color: #2E7D32;
     font-weight: bold;
-}
-
-.radio-container {
-    display: flex;
-    align-items: center; /* Centers the radio button vertically */
 }
 
 input, select, textarea {
@@ -78,6 +70,11 @@ input:focus, select:focus, textarea:focus {
     outline: none;
 }
 
+input[type="radio"] {
+    margin-right: 10px; /* Space between radio button and text */
+}
+
+/* Button Styles */
 button {
     width: 100%;
     padding: 12px;
@@ -94,13 +91,14 @@ button:hover {
     background: #1B5E20;
 }
 
-/* Placeholder styles */
-::placeholder {
-    color: #aaa;
-}
-
-input::placeholder, textarea::placeholder {
-    font-style: italic;
+/* Timer Styles */
+.timer {
+    font-size: 36px; /* Larger font size for the timer */
+    color: #388E3C; /* Dark green color for the timer */
+    margin: 20px 0; /* Space around the timer */
+    background-color: #e8f5e9; /* Light green background for timer */
+    padding: 10px; /* Padding around the timer */
+    border-radius: 10px; /* Rounded corners for timer */
 }
 
 /* Hero Section Styles */
